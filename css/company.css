@@ -578,7 +578,8 @@
 	/* transform: translate(-50%, -50%); */
 
 	z-index: 150;
-	width: 450px;
+	max-width: 450px;
+	width: 90%;
 	height: auto;
 	padding: 20px;
 	z-index: 200;
