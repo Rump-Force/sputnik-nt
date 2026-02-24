@@ -1,0 +1,860 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>О нас</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/company.css" />
+
+		<script src="js/main.js" defer></script>
+		<!-- defer атрибут что будет загружаться в конце -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header class="header">
+			<!-- <canvas
+				id="wavesCanvas"
+				style="
+					position: absolute;
+					top: -410px;
+					left: 296px;
+					width: 100%;
+					height: 100%;
+					pointer-events: none;
+					z-index: 0;
+				"
+			></canvas> -->
+			<div class="container">
+				<div class="header__inner">
+					<a href="index.html" class="logo logo-sputnik">
+						<div class="orbits">
+							<div class="orbit orbit-1"></div>
+							<div class="orbit orbit-2"></div>
+							<div class="orbit orbit-3"></div>
+						</div>
+
+						<div class="logo__title">
+							Sputnik
+							<span class="logo__accent">nt</span>
+						</div>
+						<div class="logo__subtitle">Телекоммуникации</div>
+					</a>
+
+					<button class="button button__burger">
+						<span class="burger__line"></span>
+						<span class="burger__line"></span>
+						<span class="burger__line"></span>
+					</button>
+
+					<nav class="menu">
+						<ul class="menu__items">
+							<button class="button__close button">
+								<i class="ri-close-large-fill"></i>
+							</button>
+
+							<li class="menu__item">
+								<a href="index.html" class="menu__link">Главная</a>
+							</li>
+							<li class="menu__item">
+								<a href="services.html" class="menu__link">Услуги</a>
+							</li>
+							<li class="menu__item">
+								<a href="tariffs.html" class="menu__link">Тарифы</a>
+							</li>
+							<li class="menu__item">
+								<a href="stock.html" class="menu__link">Акции</a>
+							</li>
+							<li class="menu__item">
+								<a href="news.html" class="menu__link">Новости</a>
+							</li>
+							<li class="menu__item">
+								<a href="company.html" class="menu__link menu--active">О нас</a>
+							</li>
+							<li class="menu__item">
+								<a href="contacts.html" class="menu__link">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+
+					<div class="header__button">
+						<button class="neon modal-win">Get Consultation</button>
+					</div>
+				</div>
+			</div>
+			<div class="overlay"></div>
+		</header>
+
+		<section class="about">
+			<div class="container">
+				<div class="about__title about--line">Наши ценности</div>
+				<div class="about__items">
+					<div class="about__item">
+						<div class="about__item-icons">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="32"
+								height="32"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="about__item-icon"
+								aria-hidden="true"
+							>
+								<path
+									d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"
+								></path>
+								<circle cx="12" cy="8" r="6"></circle>
+							</svg>
+						</div>
+						<div class="about__item-title">Надежность</div>
+						<div class="about__item-text">
+							Ваша безопасность и конфиденциальность — наш безусловный приоритет.
+						</div>
+					</div>
+					<div class="about__item">
+						<div class="about__item-icons">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="32"
+								height="32"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="about__item-icon"
+								aria-hidden="true"
+							>
+								<path
+									d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+								></path>
+							</svg>
+						</div>
+						<div class="about__item-title">Инновации</div>
+						<div class="about__item-text">
+							Постоянное внедрение передовых технологий GPON и Wi-Fi 6.
+						</div>
+					</div>
+					<div class="about__item">
+						<div class="about__item-icons">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="32"
+								height="32"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="about__item-icon"
+								aria-hidden="true"
+							>
+								<circle cx="12" cy="12" r="10"></circle>
+								<path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+								<path d="M2 12h20"></path>
+							</svg>
+						</div>
+						<div class="about__item-title">Качество</div>
+						<div class="about__item-text">
+							Мы не идем на компромиссы, когда речь заходит о стабильности соединения.
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="partners">
+			<div class="container">
+				<div class="partners__info">
+					<div class="partners__title">Наши Партнеры</div>
+					<div class="partners__text">
+						Мы работаем с лидерами индустрии, чтобы предоставить вам лучший сервис.
+					</div>
+				</div>
+				<div class="partners__items">
+					<div class="partners__item">
+						<div class="partners__item-icons">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="40"
+								height="40"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="partners__item-icon"
+								aria-hidden="true"
+							>
+								<rect width="20" height="8" x="2" y="2" rx="2" ry="2"></rect>
+								<rect width="20" height="8" x="2" y="14" rx="2" ry="2"></rect>
+								<line x1="6" x2="6.01" y1="6" y2="6"></line>
+								<line x1="6" x2="6.01" y1="18" y2="18"></line>
+							</svg>
+						</div>
+						<div class="partners__item-text">Cisco Systems</div>
+					</div>
+					<div class="partners__item">
+						<div class="partners__item-icons">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="40"
+								height="40"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="partners__item-icon"
+								aria-hidden="true"
+							>
+								<ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+								<path d="M3 5V19A9 3 0 0 0 21 19V5"></path>
+								<path d="M3 12A9 3 0 0 0 21 12"></path>
+							</svg>
+						</div>
+						<div class="partners__item-text">Huawei</div>
+					</div>
+					<div class="partners__item">
+						<div class="partners__item-icons">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="40"
+								height="40"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="partners__item-icon"
+								aria-hidden="true"
+							>
+								<path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
+							</svg>
+						</div>
+						<div class="partners__item-text">Microsoft Azure</div>
+					</div>
+					<div class="partners__item">
+						<div class="partners__item-icons">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="40"
+								height="40"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="partners__item-icon"
+								aria-hidden="true"
+							>
+								<path
+									d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+								></path>
+							</svg>
+						</div>
+
+						<div class="partners__item-text">Kaspersky Lab</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="licenses">
+			<div class="container">
+				<div class="licenses__status">
+					<div class="licenses__title">Лицензии и Сертификаты</div>
+					<div class="licenses__text">
+						Мы работаем полностью официально в соответствии с законодательством РФ. Ваша связь
+						защищена юридически и технически.
+					</div>
+				</div>
+				<div class="licenses__items">
+					<div
+						class="licenses__item licenses__item--connection"
+						data-img="images/img/certificate-1.webp"
+					>
+						<div class="licenses__group">
+							<div class="licenses__group-icons">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									class="licenses__group-icon scanline-icon-blue"
+									aria-hidden="true"
+								>
+									<path
+										d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"
+									></path>
+									<circle cx="12" cy="8" r="6"></circle>
+								</svg>
+							</div>
+							<div class="licenses__group-title">Лицензия связи</div>
+						</div>
+						<div class="licenses__number">
+							<div class="licenses__number-title">№ L0880-5500-11-123</div>
+							<div class="licenses__number-text">Телематические услуги связи</div>
+						</div>
+						<div class="licenses__scanline">
+							<div class="licenses__scanline-item">
+								<div class="licenses__scanline-icons">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="licenses__scanline-icon"
+										aria-hidden="true"
+									>
+										<circle cx="12" cy="12" r="10"></circle>
+										<path d="m9 12 2 2 4-4"></path>
+									</svg>
+								</div>
+								<div class="licenses__scanline-text">Действует</div>
+							</div>
+							<div class="licenses__scanline-items">
+								<div class="licenses__scanline-item-decor licenses__item--connect"></div>
+								<div class="licenses__scanline-item-decor licenses__item--connect"></div>
+								<div class="licenses__scanline-item-decor licenses__item--connect"></div>
+								<div class="licenses__scanline-item-decor no-decore"></div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="licenses__item licenses__item--certificates"
+						data-img="images/img/certificate-2.webp"
+					>
+						<div class="licenses__group">
+							<div class="licenses__group-icons">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									class="licenses__group-icon scanline-icon-gren"
+									aria-hidden="true"
+								>
+									<path
+										d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"
+									></path>
+									<path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
+									<path d="m9 15 2 2 4-4"></path>
+								</svg>
+							</div>
+
+							<div class="licenses__group-title">Сертификат</div>
+						</div>
+						<div class="licenses__number">
+							<div class="licenses__number-title">№ L0880-5500-11-123</div>
+							<div class="licenses__number-text">Менеджмент качества</div>
+						</div>
+						<div class="licenses__scanline">
+							<div class="licenses__scanline-item">
+								<div class="licenses__scanline-icons">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="licenses__scanline-icon"
+										aria-hidden="true"
+									>
+										<circle cx="12" cy="12" r="10"></circle>
+										<path d="m9 12 2 2 4-4"></path>
+									</svg>
+								</div>
+								<div class="licenses__scanline-text">Действует</div>
+							</div>
+							<div class="licenses__scanline-items">
+								<div class="licenses__scanline-item-decor licenses__item--connect2"></div>
+								<div class="licenses__scanline-item-decor licenses__item--connect2"></div>
+								<div class="licenses__scanline-item-decor no-decore"></div>
+								<div class="licenses__scanline-item-decor licenses__item--connect2"></div>
+							</div>
+						</div>
+					</div>
+					<div class="licenses__item licenses__item--tv" data-img="images/img/certificate-3.webp">
+						<div class="licenses__group">
+							<div class="licenses__group-icons">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									class="licenses__group-icon scanline-icon-red"
+									aria-hidden="true"
+								>
+									<path
+										d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"
+									></path>
+									<circle cx="12" cy="8" r="6"></circle>
+								</svg>
+							</div>
+							<div class="licenses__group-title">Лицензия ТВ</div>
+						</div>
+						<div class="licenses__number">
+							<div class="licenses__number-title">№ L0880-5500-11-123</div>
+							<div class="licenses__number-text">Кабельное вещание</div>
+						</div>
+						<div class="licenses__scanline">
+							<div class="licenses__scanline-item">
+								<div class="licenses__scanline-icons">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="licenses__scanline-icon"
+										aria-hidden="true"
+									>
+										<circle cx="12" cy="12" r="10"></circle>
+										<path d="m9 12 2 2 4-4"></path>
+									</svg>
+								</div>
+								<div class="licenses__scanline-text">Действует</div>
+							</div>
+							<div class="licenses__scanline-items">
+								<div class="licenses__scanline-item-decor licenses__item--connect3"></div>
+								<div class="licenses__scanline-item-decor no-decore"></div>
+								<div class="licenses__scanline-item-decor licenses__item--connect3"></div>
+								<div class="licenses__scanline-item-decor licenses__item--connect3"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="licenses__gallery-imgs">
+					<img src="images/img/certificate-3.webp" alt="" class="licenses__gallery-img" />
+					<button class="button button__licenses-close" title="Закрыть">
+						<i class="ri-close-fill"></i>
+					</button>
+				</div>
+			</div>
+			<div class="gallery__overlay"></div>
+		</section>
+
+		<section class="documents">
+			<div class="container">
+				<div class="documents__inner">
+					<div class="documents__list">
+						<!-- LARGE CARD -->
+						<a href="images/img/6.png" download class="document-card document-card--large">
+							<div class="document-card__icons">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="28"
+									height="28"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									class="document-card-ico"
+									aria-hidden="true"
+								>
+									<path
+										d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"
+									></path>
+									<path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
+									<path d="M10 9H8"></path>
+									<path d="M16 13H8"></path>
+									<path d="M16 17H8"></path>
+								</svg>
+							</div>
+
+							<div class="document-card__content">
+								<h3 class="document-card__title">Договор Оферты</h3>
+
+								<p class="document-card__text">
+									Публичный договор на оказание услуг связи для физических лиц. Редакция от
+									13.06.2026.
+								</p>
+
+								<button class="button document-card__button">
+									<span>Скачать PDF (2.4 MB)</span>
+									<span class="document-card__button-icon">
+										<i class="ri-arrow-right-s-line"></i>
+									</span>
+								</button>
+							</div>
+						</a>
+
+						<!-- STANDARD CARD -->
+						<a href="images/img/3.jpg" download class="document-card">
+							<div class="document-card__i">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									class=""
+									aria-hidden="true"
+								>
+									<rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+									<path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+								</svg>
+							</div>
+
+							<h3 class="document-card__title">Политика конфиденциальности</h3>
+
+							<div class="document-card__meta">
+								<span>PDF, 1.1 MB</span>
+								<span class="document-card__meta-icon"><i class="ri-download-2-line"></i></span>
+							</div>
+						</a>
+
+						<a href="images/img/4.png" download class="document-card">
+							<div class="document-card__i">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									class=""
+									aria-hidden="true"
+								>
+									<path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+									<path d="m9 11 3 3L22 4"></path>
+								</svg>
+							</div>
+
+							<h3 class="document-card__title">Правила оказания услуг</h3>
+
+							<div class="document-card__meta">
+								<span>PDF, 3.8 MB</span>
+								<span class="document-card__meta-icon"><i class="ri-download-2-line"></i></span>
+							</div>
+						</a>
+					</div>
+
+					<div class="documents__animation">
+						<div class="documents__animation-box">
+							<div class="documents__animation-completed">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									class="documents__animation-completed-icon"
+									aria-hidden="true"
+								>
+									<path
+										d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"
+									></path>
+									<path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
+									<path d="m9 15 2 2 4-4"></path>
+								</svg>
+							</div>
+							<div class="documents__animation-lock">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									class="documents__animation-lock-icon"
+									aria-hidden="true"
+								>
+									<rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+									<path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+								</svg>
+							</div>
+							<div class="documents__animation-radius-decor1"></div>
+							<div class="documents__animation-radius-decor2"></div>
+							<div class="documents__animation-protection">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="100"
+									height="100"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="0.5"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									class="documents__animation-icons"
+									aria-hidden="true"
+								>
+									<path
+										d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+									></path>
+								</svg>
+							</div>
+						</div>
+						<div class="documents__animation-layout">
+							<div class="documents__animation-circle"></div>
+							<div class="documents__animation-title">Юридическая чистота</div>
+							<div class="documents__animation-text">UPD: 13.02.2026</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="modal" id="thanks-modal">
+			<div class="modal__overlay"></div>
+			<div class="modal__content">
+				<button class="modal__close" id="modal-close">
+					<i class="ri-close-line"></i>
+				</button>
+
+				<div class="modal__icon">
+					<svg class="checkmark" viewBox="0 0 52 52">
+						<circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+						<path class="checkmark__check" fill="none" d="M14 27l7 7 17-17" />
+					</svg>
+				</div>
+
+				<h3 class="modal__title">Спасибо за заявку!</h3>
+				<p class="modal__text">Мы свяжемся с вами в ближайшее время.</p>
+			</div>
+		</div>
+
+		<div class="popup">
+			<!-- фоновые декорации попапа -->
+			<div class="popup__decor popup__decor--bg-left"></div>
+			<div class="popup__decor popup__decor--bg-right"></div>
+
+			<div class="popup__inner">
+				<div class="popup__header">
+					<div class="popup__heading">
+						<div class="popup__tag">
+							<span class="popup__tag-icon"></span>
+							<span class="popup__tag-text">System online</span>
+						</div>
+					</div>
+					<h3 class="popup__title">
+						Обратный
+						<span>звонок</span>
+					</h3>
+
+					<button class="popup__close button">
+						<i class="ri-close-line popup__close-icon"></i>
+					</button>
+				</div>
+				<p class="popup__text popup__text--line">
+					Введите свои данные, и мы свяжемся с вами в ближайшее время для настройки оборудования.
+				</p>
+				<form class="popup__form">
+					<div class="popup__field">
+						<label class="popup__label" for="name">Имя пользователя</label>
+						<div class="popup__field-group">
+							<input
+								class="popup__input"
+								id="name"
+								type="text"
+								placeholder="Alexey"
+								autocomplete="username"
+								required
+							/>
+
+							<!-- декор поля -->
+							<span class="popup__decor--field-top-left"></span>
+							<span class="popup__decor--field-bottom-right"></span>
+						</div>
+					</div>
+
+					<div class="popup__field">
+						<label class="popup__label" for="tel">Телефон</label>
+						<div class="popup__field-group">
+							<input
+								class="popup__input"
+								id="tel"
+								type="tel"
+								placeholder="+7 (___) ___-__-__"
+								autocomplete="tel"
+								required
+							/>
+
+							<span class="popup__decor--field-top-left"></span>
+							<span class="popup__decor--field-bottom-right"></span>
+						</div>
+					</div>
+
+					<button class="popup__button button" type="submit">Заказать звонок</button>
+				</form>
+				<div class="popup__decor-line"></div>
+				<div class="popup__info">
+					<div class="popup__info-item">
+						<span class="popup__info-icon"><i class="ri-lock-line"></i></span>
+						<span class="popup__info-text">Secure Encrypted</span>
+					</div>
+					<div class="popup__info-id">ID: 8842-XF</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="container">
+				<!-- TOP -->
+				<div class="footer__top">
+					<div class="footer__grid">
+						<!-- BRAND -->
+						<div class="footer__brand">
+							<a href="#" class="footer__logo">
+								<div class="footer__logo-icon"></div>
+
+								<div class="footer__logo-content">
+									<div class="footer__logo-title">
+										Sputnik
+										<span>NT</span>
+									</div>
+									<div class="footer__logo-subtitle">Всегда онлайн</div>
+								</div>
+							</a>
+
+							<div class="footer__description">
+								Провайдер нового поколения. Создаем цифровую экосистему для жизни и бизнеса на базе
+								собственной оптоволоконной магистрали.
+							</div>
+
+							<div class="footer__region">
+								<div class="footer__region-badge">
+									<div class="footer__region-icon"><i class="ri-global-line"></i></div>
+									<div class="footer__region-code">RU</div>
+								</div>
+								<div class="footer__region-name">Donetsk Region</div>
+							</div>
+						</div>
+
+						<!-- NAV -->
+						<div class="footer__nav">
+							<div class="footer__title footer__title--line">
+								<span class="footer__title-text">Сервисы</span>
+								<span class="footer__title-icon"><i class="ri-arrow-down-s-line"></i></span>
+							</div>
+							<nav class="footer__menu">
+								<a href="#" class="footer__link">Скоростной интернет</a>
+								<a href="#" class="footer__link">Цифровое ТВ</a>
+								<a href="#" class="footer__link">Видеонаблюдение</a>
+								<a href="#" class="footer__link">Умный дом</a>
+								<a href="#" class="footer__link">Оборудование</a>
+							</nav>
+						</div>
+
+						<!-- NAV -->
+						<div class="footer__nav">
+							<div class="footer__title footer__title--line">
+								<span class="footer__title-text">Компания</span>
+								<span class="footer__title-icon"><i class="ri-arrow-down-s-line"></i></span>
+							</div>
+							<nav class="footer__menu">
+								<a href="#" class="footer__link">О нас</a>
+								<a href="#" class="footer__link">Лицензия</a>
+								<a href="#" class="footer__link">Инвесторам</a>
+								<a href="#" class="footer__link">Новости</a>
+								<a href="#" class="footer__link">Контакты</a>
+							</nav>
+						</div>
+
+						<!-- CONTACTS -->
+						<div class="footer__contacts">
+							<div class="footer__phone">
+								<a href="tel:+88000000000" class="footer__phone-link">8 800 000-00-00</a>
+								<span class="footer__phone-text">Круглосуточная поддержка</span>
+							</div>
+
+							<button class="footer__button button modal-win">
+								<span class="footer__button-icon"><i class="ri-mail-send-line"></i></span>
+								<span class="footer__button-text">Написать письмо</span>
+								<span class="footer__button-icon icon--arrow">
+									<i class="ri-arrow-right-up-line"></i>
+								</span>
+							</button>
+
+							<div class="footer__schedule">
+								<span class="footer__schedule-icon"><i class="ri-time-line"></i></span>
+								<span class="footer__schedule-text">Офис: Пн–Пт 09:00 – 21:00</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- BOTTOM -->
+				<div class="footer__bottom">
+					<div class="footer__bottom-inner">
+						<div class="footer__copyright">© 2026 Telecom Future. All rights reserved.</div>
+
+						<div class="footer__legal">
+							<a href="#" class="footer__legal-link">Privacy Policy</a>
+							<a href="#" class="footer__legal-link">Terms of Service</a>
+							<a href="#" class="footer__legal-link">SLA Agreement</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="popup__overlay"></div>
+		<!-- <script src="https://cdn.tailwindcss.com"></script> -->
+		<script src="js/company.js"></script>
+		<script src="https://unpkg.com/imask"></script>
+		<link
+			href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+			rel="stylesheet"
+		/>
+	</body>
+</html>

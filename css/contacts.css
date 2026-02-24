@@ -1,0 +1,587 @@
+.contact {
+	padding-block: 300px 100px;
+}
+
+.contact__wrapp {
+	max-width: 350px;
+	margin-bottom: 50px;
+}
+
+.contact__group {
+	/* max-width: 1000px; */
+	/* background: red; */
+}
+
+.contact__tag {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	padding-inline: 10px;
+	padding-block: 3px;
+	border: 1px solid #DBEAFE;
+	background: #EFF6FF;
+	color: #2563EE;
+	border-radius: 20px;
+	margin-bottom: 25px;
+}
+
+.contact__tag-icons {
+	line-height: 1;
+}
+
+.contact__tag-icon {
+	width: 12px;
+	height: 12px;
+}
+
+.contact__tag-text {
+	text-transform: uppercase;
+	font-size: 10px;
+	letter-spacing: 0.1rem;
+	font-weight: 700;
+}
+
+.contact__title {
+	font-size: 57px;
+	font-weight: 800;
+	line-height: 1;
+	margin-bottom: 20px;
+}
+
+.contact__description {
+	color: #64748B;
+	font-size: 17px;
+	font-weight: 600;
+}
+
+.contact__inner {
+	display: flex;
+	gap: 25px;
+	margin-bottom: 25px;
+}
+
+.contact__map {
+	width: 100%;
+	/* max-width: 100%; */
+	padding: 25px;
+	border-radius: 20px;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.091);
+	overflow: hidden;
+	line-height: 1;
+}
+
+.contact__map-wrap {
+	width: 600px;
+	max-width: 100%;
+	height: 680px;
+}
+
+.contact__map iframe {
+	display: block;
+	line-height: 1;
+	border-radius: 20px;
+}
+
+.contact__info {
+	/* max-width: 640px; */
+	width: 100%;
+}
+
+.contacts__time-work {
+	width: 100%;
+	background: #fff;
+	display: inline-flex;
+	padding: 15px 35px;
+	border-radius: 20px;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.091);
+	align-items: center;
+	gap: 35px;
+	margin-bottom: 30px;
+}
+
+.contacts__time-icon {}
+
+.contacts__time-clock {
+	position: relative;
+	width: 58px;
+	height: 58px;
+	border: 2px solid #9ea4b043;
+	border-radius: 100%;
+}
+
+.contacts__time-clock::before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 58px;
+	height: 58px;
+	border: 2px solid #17BB85;
+	border-radius: 50%;
+	border-top-color: transparent;
+	animation: rotate-clock 8s linear infinite;
+}
+
+@keyframes rotate-clock {
+	from {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+
+	to {
+		transform: translate(-50%, -50%) rotate(360deg);
+	}
+}
+
+.contacts__time-clock-watch {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 20px;
+	height: 3px;
+	background: #000;
+	transform-origin: left center;
+	transform: translateY(-50%) rotate(0deg);
+	border-radius: 2px;
+	animation: rotate-hands 60s linear infinite;
+}
+
+.contacts__time-clock-minutes {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform-origin: left center;
+	width: 25px;
+	height: 1.5px;
+	background: #6e6e6e;
+	animation: rotate-hands 15s linear infinite;
+}
+
+.contacts__time-clock-mechanism {
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	background: #000;
+	border-radius: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@keyframes rotate-hands {
+	from {
+		transform: translateY(-50%) rotate(-90deg);
+		/* Начинаем с 12 часов */
+	}
+
+	to {
+		transform: translateY(-50%) rotate(270deg);
+	}
+}
+
+.contacts__time-work--text {}
+
+.contacts__time-work-tile {
+	color: #9EA4B0;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 11px;
+	letter-spacing: 0.18rem;
+}
+
+.contacts__time-work--schedule {
+	font-size: 25px;
+	font-weight: 700;
+}
+
+.contacts__time-close {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	padding: 2px 15px;
+	border-radius: 20px;
+	background: #FFF1F2;
+	border: 1px solid #FFE4E6;
+}
+
+.contacts__time-close--circle {
+	width: 5px;
+	height: 5px;
+	background: #E61D48;
+	border-radius: 100%;
+}
+
+.contacts__time-close--text {
+	color: #E61D48;
+	font-weight: 700;
+}
+
+.contact__items {
+	display: flex;
+	align-items: center;
+	gap: 25px;
+	margin-bottom: 25px;
+}
+
+.contact__item {
+	width: 100%;
+}
+
+.contacts__links {
+	display: block;
+	border-radius: 20px;
+	padding: 15px 35px;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.091);
+	border: 1px solid #e4e4e474;
+	transition: border-color 0.4s ease;
+}
+
+.contacts__links:hover {
+	border-color: #2562EC;
+}
+
+.contacts__links:hover .contacts__link-number {
+	color: #2562EC;
+}
+
+.contacts__links:hover .lucide-phone {
+	transform: scale(1.2);
+}
+
+.contacts__links:hover .contacts__link-icons {
+	border-color: #2561ec71;
+}
+
+.contacts__link-icons {
+	background: #fff;
+	padding: 10px;
+	box-shadow: inset 0 0px 8px rgba(0, 0, 0, 0.091);
+	border: 1px solid #e4e4e4;
+	width: 40px;
+	height: 40px;
+	display: grid;
+	place-items: center;
+	border-radius: 8px;
+	margin-bottom: 15px;
+	transition: border-color 0.4s ease;
+}
+
+.lucide-phone {
+	width: 20px;
+	height: auto;
+	color: #2F6BEF;
+	transition: transform 0.4s ease;
+}
+
+.contacts__link-text {
+	text-transform: uppercase;
+	font-size: 10px;
+	font-weight: 800;
+	color: #9BA9BD;
+	letter-spacing: 0.1rem;
+	margin-bottom: 3px;
+
+}
+
+.contacts__link-number {
+	color: #000;
+	font-weight: 700;
+	font-size: 14px;
+	transition: color 0.4s ease;
+}
+
+/* Открыто */
+.contacts__time-clock.is-open::before {
+	border-color: #17BB85;
+	border-top-color: transparent;
+}
+
+.contacts__time-close.is-open {
+	background: #ECFDF5;
+	border-color: #A7F3D0;
+}
+
+
+.contacts__time-close.is-open .contacts__time-close--text {
+	color: #17BB85;
+}
+
+.contacts__time-close.is-open .contacts__time-close--circle {
+	background: #17BB85;
+}
+
+/* Закрыто */
+.contacts__time-clock.is-closed::before {
+	border-color: #E61D48;
+	border-top-color: transparent;
+}
+
+.contacts__time-close.is-closed {
+	background: #FFF1F2;
+	border-color: #FFE4E6;
+}
+
+.contacts__time-close.is-closed .contacts__time-close--circle {
+	background: #E61D48;
+}
+
+.contacts__time-close.is-closed .contacts__time-close--text {
+
+	color: #E61D48;
+}
+
+
+.contacts__location {}
+
+.contacts__location-items {}
+
+.contacts__location-item {
+	background: #fff;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.091);
+	border-radius: 20px;
+	padding: 15px 35px;
+}
+
+.contacts__location-item:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.contacts__location-icon {
+	background: #fff;
+	padding: 10px;
+	box-shadow: inset 0 0px 8px rgba(0, 0, 0, 0.091);
+	border: 1px solid #e4e4e4;
+	width: 40px;
+	height: 40px;
+	display: grid;
+	place-items: center;
+	border-radius: 8px;
+	margin-bottom: 15px;
+	transition: border-color 0.4s ease;
+}
+
+.lucide-map-pin {
+	width: 20px;
+	height: auto;
+	color: #2F6BEF;
+	transition: transform 0.4s ease;
+}
+
+.contacts__location-info {}
+
+.contacts__location-description {
+	text-transform: uppercase;
+	color: #94A3B8;
+	font-weight: 800;
+	letter-spacing: 0.1rem;
+	font-size: 10px;
+	margin-bottom: 3px;
+}
+
+.contacts__location-title {
+	max-width: 350px;
+	color: #000;
+	font-weight: 600;
+}
+
+.contacts__travel {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #fff;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.091);
+	border-radius: 20px;
+	padding: 15px 35px;
+}
+
+.contacts__travel:hover .lucide-travel {
+	transform: scale(1.2);
+}
+
+.contacts__travel:hover .contacts__travel-button-icon {
+	transform: translateX(10px);
+
+}
+
+.contacts__travel-icons {
+	background: #fff;
+	padding: 10px;
+	box-shadow: inset 0 0px 8px rgba(0, 0, 0, 0.091);
+	border: 1px solid #e4e4e4;
+	width: 60px;
+	height: 60px;
+	display: grid;
+	place-items: center;
+	border-radius: 8px;
+	transition: border-color 0.4s ease;
+}
+
+.lucide-travel {
+	width: 40px;
+	height: auto;
+	color: #2F6BEF;
+	transition: transform 0.4s ease;
+}
+
+.contacts__travel-text {
+	flex: 1;
+	padding: 20px;
+}
+
+.contacts__travel-subtitle {
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 0.15rem;
+	font-weight: 900;
+	color: #2F6BEF;
+	margin-bottom: 10px;
+}
+
+.contacts__travel-title {
+	font-weight: 600;
+	font-size: 17px;
+}
+
+.contacts__travel-name {}
+
+.contacts__travel-description {
+	text-align: right;
+	max-width: 200px;
+	font-size: 12px;
+	margin-bottom: 10px;
+	color: #94A3B8;
+	font-weight: 400;
+}
+
+.contacts__travel-button {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	color: #2F6BEF;
+}
+
+.contacts__travel-button-text {
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: 12px;
+	letter-spacing: 0.1rem;
+}
+
+.contacts__travel-button-icon {
+	transition: transform 0.4s ease;
+}
+
+.contacts__travel-button-icon i {}
+
+.ri-arrow-right-long-line {}
+
+
+@media screen and (max-width: 1000px) {
+	.contact__inner {
+		flex-direction: column;
+	}
+
+	.contact__title {
+		font-size: calc(35px + (57 - 35) * ((100vw - 600px) / (1000 - 600)));
+	}
+
+	.contact__map-wrap {
+		width: 100%;
+	}
+
+	.contact__map iframe {
+		display: block;
+	}
+
+	.contact__map-wrap {
+		height: 350px;
+	}
+
+	.contact__info {
+		display: grid;
+		column-gap: 25px;
+		grid-template-areas:
+			'block-1 block-2'
+			'block-1 block-2';
+	}
+
+	.contacts__time-work {
+		grid-area: block-1;
+	}
+
+	.contact__items {
+		grid-area: block-2;
+		grid-row: span 2;
+		flex-direction: column;
+	}
+
+	.contacts__location {
+		grid-area: block-3;
+		grid-column: span 2;
+	}
+}
+
+@media screen and (max-width: 730px) {
+	.contact__info {
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-areas:
+			'block-1 '
+			'block-2 ';
+		column-gap: 0px;
+	}
+
+}
+
+@media screen and (max-width: 630px) {
+	.contacts__travel {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.contacts__travel-description {
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.contact__title {
+		font-size: calc(30px + (35 - 30) * ((100vw - 400px) / (600 - 400)));
+	}
+
+	.contact__description {
+		font-size: calc(15px + (17 - 15) * ((100vw - 400px) / (600 - 400)));
+	}
+}
+
+@media screen and (max-width: 500px) {
+
+	.contacts__time-work {
+		flex-direction: column;
+		padding-inline: calc(10px + (30 - 10) * ((100vw - 300px) / (500 - 300)));
+	}
+
+	.contacts__links,
+	.contacts__location-item,
+	.contacts__travel {
+		padding-inline: calc(15px + (30 - 15) * ((100vw - 300px) / (500 - 300)));
+	}
+
+	.contacts__location-title {
+		font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (500 - 300)));
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.promotion__title {
+		font-size: 27px;
+	}
+		.contact__description {
+			font-size: 15px;
+		}
+}
+
+@media screen and (max-width: 300px) {
+	.contacts__location-title {
+		font-size: 14px
+	}
+}

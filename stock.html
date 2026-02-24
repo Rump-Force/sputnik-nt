@@ -1,0 +1,907 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Акции</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/stock.css" />
+
+		<script src="js/main.js" defer></script>
+		<!-- defer атрибут что будет загружаться в конце -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header class="header">
+			<!-- <canvas
+				id="wavesCanvas"
+				style="
+					position: absolute;
+					top: -410px;
+					left: 296px;
+					width: 100%;
+					height: 100%;
+					pointer-events: none;
+					z-index: 0;
+				"
+			></canvas> -->
+			<div class="container">
+				<div class="header__inner">
+					<a href="index.html" class="logo logo-sputnik">
+						<div class="orbits">
+							<div class="orbit orbit-1"></div>
+							<div class="orbit orbit-2"></div>
+							<div class="orbit orbit-3"></div>
+						</div>
+
+						<div class="logo__title">
+							Sputnik
+							<span class="logo__accent">nt</span>
+						</div>
+						<div class="logo__subtitle">Телекоммуникации</div>
+					</a>
+
+					<button class="button button__burger">
+						<span class="burger__line"></span>
+						<span class="burger__line"></span>
+						<span class="burger__line"></span>
+					</button>
+
+					<nav class="menu">
+						<ul class="menu__items">
+							<button class="button__close button">
+								<i class="ri-close-large-fill"></i>
+							</button>
+
+							<li class="menu__item">
+								<a href="index.html" class="menu__link">Главная</a>
+							</li>
+							<li class="menu__item">
+								<a href="services.html" class="menu__link">Услуги</a>
+							</li>
+							<li class="menu__item">
+								<a href="tariffs.html" class="menu__link">Тарифы</a>
+							</li>
+							<li class="menu__item">
+								<a href="stock.html" class="menu__link menu--active">Акции</a>
+							</li>
+							<li class="menu__item">
+								<a href="news.html" class="menu__link">Новости</a>
+							</li>
+							<li class="menu__item">
+								<a href="company.html" class="menu__link">О нас</a>
+							</li>
+							<li class="menu__item">
+								<a href="contacts.html" class="menu__link">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+
+					<div class="header__button">
+						<button class="neon modal-win">Get Consultation</button>
+					</div>
+				</div>
+			</div>
+			<div class="overlay"></div>
+		</header>
+
+		<main class="main-section">
+			<div class="main-section-decor1"></div>
+			<div class="main-section-decor2"></div>
+
+			<section class="net">
+				<div class="container">
+					<div class="net__inner">
+						<div class="net__content">
+							<h2 class="net__title">Твоя сеть — твои правила</h2>
+							<p class="net__description">
+								Создай свою экосистему и забудь об оплате интернета навсегда.
+							</p>
+							<p class="net__tagline">Стань архитектором будущего.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="promotion mb-150">
+				<div class="container">
+					<div class="promotion__inner">
+						<div class="promotion__content">
+							<div class="promotion__teg tag--default">
+								<div class="promotion__teg-icon">
+									<i class="ri-open-arm-fill"></i>
+								</div>
+								<div class="promotion__teg-title">Referral Program</div>
+							</div>
+							<div class="promotion__title">
+								Месяц за друга.
+								<span class="promotion-accent">Без лимитов.</span>
+							</div>
+							<div class="promotion__text">
+								Каждый приглашенный адепт приносит тебе 30 дней неограниченного доступа к узлу Deep
+								Space.
+							</div>
+						</div>
+						<div class="promotion-group">
+							<div class="promotion-group--dared"></div>
+							<div class="promotion-group__icon">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									class="lucide lucide-sparkles text-yellow"
+									aria-hidden="true"
+								>
+									<path
+										d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"
+									></path>
+									<path d="M20 2v4"></path>
+									<path d="M22 4h-4"></path>
+									<circle cx="4" cy="20" r="2"></circle>
+								</svg>
+							</div>
+
+							<div class="promotion__wrap">
+								<div class="promotion-group__title">Месяц за друга</div>
+
+								<div class="promotion-group__box">
+									<div class="promotion-group__badge">PREMIUM</div>
+									<div class="promotion-group__box-title">Доступно всем</div>
+								</div>
+
+								<div class="promotion-group__items">
+									<div class="promotion-group__item">
+										<div class="promotion-group__circle promotion-group__circle--blue"></div>
+										<div class="promotion-group__text">Без лимитов по количеству</div>
+									</div>
+									<div class="promotion-group__item">
+										<div class="promotion-group__circle promotion-group__circle--purple"></div>
+										<div class="promotion-group__text">Без скрытых условий</div>
+									</div>
+									<div class="promotion-group__item">
+										<div class="promotion-group__circle promotion-group__circle--white"></div>
+										<div class="promotion-group__text">Мгновенная активация</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="promotion-group__divider"></div>
+
+							<div class="promotion-group__bonus">
+								<div class="promotion-group__bonus-title">Бонус</div>
+								<div class="promotion-group__bonus-value">1 МЕСЯЦ</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="interference mb-150">
+				<div class="container">
+					<div class="interference__inner">
+						<div class="interference-animation">
+							<div class="interference-animation__waves group">
+								<div
+									class="interference-animation__wave interference-animation__wave--1 flex items-center gap-2"
+								>
+									<svg
+										width="80"
+										height="20"
+										viewBox="0 0 80 20"
+										class="interference-crush interference-crush--red"
+										style="animation-delay: 0s"
+									>
+										<path
+											d="M0 10 L10 2 L20 18 L30 4 L40 16 L50 2 L60 18 L70 5 L80 10"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+										></path>
+									</svg>
+									<div
+										class="interference-animation__line interference-animation__line--blue"
+									></div>
+								</div>
+								<div
+									class="interference-animation__wave interference-animation__wave--2 flex items-center gap-2"
+								>
+									<svg
+										width="80"
+										height="20"
+										viewBox="0 0 80 20"
+										class="interference-crush interference-crush--blue"
+										style="animation-delay: 0.7s"
+									>
+										<path
+											d="M0 10 L10 2 L20 18 L30 4 L40 16 L50 2 L60 18 L70 5 L80 10"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+										></path>
+									</svg>
+									<div
+										class="interference-animation__line interference-animation__line--blue"
+									></div>
+								</div>
+								<div
+									class="interference-animation__wave interference-animation__wave--3 flex items-center gap-2"
+								>
+									<svg
+										width="80"
+										height="20"
+										viewBox="0 0 80 20"
+										class="interference-crush interference-crush--yellow"
+										style="animation-delay: 1.4s"
+									>
+										<path
+											d="M0 10 L10 2 L20 18 L30 4 L40 16 L50 2 L60 18 L70 5 L80 10"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+										></path>
+									</svg>
+									<div
+										class="interference-animation__line interference-animation__line--blue"
+									></div>
+								</div>
+								<div
+									class="interference-animation__wave interference-animation__wave--4 flex items-center gap-2"
+								>
+									<svg
+										width="80"
+										height="20"
+										viewBox="0 0 80 20"
+										class="interference-crush interference-crush--purple"
+										style="animation-delay: 2.1s"
+									>
+										<path
+											d="M0 10 L10 2 L20 18 L30 4 L40 16 L50 2 L60 18 L70 5 L80 10"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+										></path>
+									</svg>
+									<div
+										class="interference-animation__line interference-animation__line--blue"
+									></div>
+								</div>
+							</div>
+							<div class="interference__device">
+								<div class="interference__device-inner">
+									<div class="interference__device-device__border">
+										<div class="interference__device-device-pattern"></div>
+										<div class="interference__device-device-glow"></div>
+									</div>
+									<div class="interference__device-core">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="48"
+											height="48"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											class="lucide lucide-cpu"
+											aria-hidden="true"
+										>
+											<path d="M12 20v2"></path>
+											<path d="M12 2v2"></path>
+											<path d="M17 20v2"></path>
+											<path d="M17 2v2"></path>
+											<path d="M2 12h2"></path>
+											<path d="M2 17h2"></path>
+											<path d="M2 7h2"></path>
+											<path d="M20 12h2"></path>
+											<path d="M20 17h2"></path>
+											<path d="M20 7h2"></path>
+											<path d="M7 20v2"></path>
+											<path d="M7 2v2"></path>
+											<rect x="4" y="4" width="16" height="16" rx="2"></rect>
+											<rect x="8" y="8" width="8" height="8" rx="1"></rect>
+										</svg>
+									</div>
+									<div class="interference__device-indictor">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path
+												d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"
+											></path>
+										</svg>
+									</div>
+									<div class="interference__device-label">
+										<div class="interference__device-label-text">Signal_Isolator_v7</div>
+									</div>
+									<div class="interference__device-devise">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="24"
+											height="24"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											class="interference-section__device-icon"
+										>
+											<path
+												d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"
+											></path>
+										</svg>
+										<div class="interference__device-devise-text">Power Output</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="interference__content">
+							<div class="interference__teg tag--default">
+								<div class="interference__teg-icon">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="network-icon network-activity"
+										aria-hidden="true"
+									>
+										<path
+											d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+										></path>
+										<path d="m9 12 2 2 4-4"></path>
+									</svg>
+								</div>
+								<div class="interference__teg-text">Enterprise Upgrade</div>
+							</div>
+							<div class="interference__text">
+								<div class="interference__text-title">
+									Оружие против
+									<span>помех</span>
+								</div>
+								<div class="interference__text-description">
+									Замени старое железо на гигабитный интеллект бесплатно. Забудь о задержках — Wi-Fi
+									7 превращает хаос помех в лазерную точность сигнала.
+								</div>
+							</div>
+							<div class="interference__stats">
+								<div class="interference__stats-items">
+									<div class="interference__stats-item">
+										<div class="interference__stats-item-title">Efficiency</div>
+										<div class="interference__stats-item-text">+400%</div>
+									</div>
+									<div class="interference__stats-item">
+										<div class="interference__stats-item-title stats-title--accent">Latency</div>
+										<div class="interference__stats-item-text">0.2 ms</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="speed mb-150">
+				<div class="container">
+					<div class="speed__inner">
+						<!-- CONTENT -->
+						<div class="speed__content">
+							<!-- TAG (отдельный блок) -->
+							<div class="tag tag--default speed__tag">
+								<span class="tag__icon" aria-hidden="true">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									>
+										<line x1="10" x2="14" y1="2" y2="2"></line>
+										<line x1="12" x2="15" y1="14" y2="11"></line>
+										<circle cx="12" cy="14" r="8"></circle>
+									</svg>
+								</span>
+								<span class="tag__title">Warp Speed Protocol</span>
+							</div>
+
+							<!-- GROUP -->
+							<div class="speed-group">
+								<h2 class="speed-group__title">
+									Время
+									<span class="speed-group__title-accent">Максимальных</span>
+									<span class="speed-group__title-highlight">скоростей</span>
+								</h2>
+
+								<p class="speed-group__description">
+									Сними ограничения. Ночной безлимит на скорости до 1 Гбит/с. Твое время
+									доминировать в сети наступает после заката.
+								</p>
+
+								<!-- METRICS -->
+								<ul class="speed-group__metrics">
+									<li class="speed-metric">
+										<span class="speed-metric__icon" aria-hidden="true">
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												stroke="currentColor"
+												stroke-width="2"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												class="speed-section__rate-icon"
+											>
+												<path d="m12 14 4-4"></path>
+												<path d="M3.34 19a10 10 0 1 1 17.32 0"></path>
+											</svg>
+										</span>
+										<div class="speed-metric__content">
+											<span class="speed-metric__label speed-metric__label--default">
+												Base Rate
+											</span>
+											<span class="speed-metric__value">100 Mbps</span>
+										</div>
+									</li>
+
+									<li class="speed-metric speed-metric--boost">
+										<span class="speed-metric__icon" aria-hidden="true">
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												stroke="currentColor"
+												stroke-width="2"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												class="speed-section__rate-icon"
+												style="animation: pulse 1s infinite"
+											>
+												<path
+													d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"
+												></path>
+											</svg>
+										</span>
+										<div class="speed-metric__content">
+											<span class="speed-metric__label speed-metric__label--boost">
+												Night Boost
+											</span>
+											<span class="speed-metric__value">1000 Mbps</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- CONTROLS -->
+						<aside class="speed-controls">
+							<div class="speed-controls__status">
+								<span class="speed-controls__icon" aria-hidden="true">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="40"
+										height="40"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									>
+										<path d="m12 14 4-4"></path>
+										<path d="M3.34 19a10 10 0 1 1 17.32 0"></path>
+									</svg>
+								</span>
+
+								<div class="speed-controls__status-text">
+									<span class="speed-controls__label">Protocol Status</span>
+									<span class="speed-controls__value">Ready_for_Upload</span>
+								</div>
+							</div>
+
+							<div class="speed-controls__divider" aria-hidden="true">
+								<div class="speed-controls__divider-text">
+									<div class="speed-controls__divider-title">Performance</div>
+									<div class="speed-controls__divider-value">Infinity</div>
+								</div>
+								<div class="speed-controls__divider-line"></div>
+							</div>
+
+							<div class="speed-controls__infinity" aria-hidden="true">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="80"
+									height="80"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									class="speed-section__card-infinity"
+								>
+									<path d="M6 16c5 0 7-8 12-8a4 4 0 0 1 0 8c-5 0-7-8-12-8a4 4 0 1 0 0 8"></path>
+								</svg>
+
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="80"
+									height="80"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									class="speed-controls__infinity-icon speed-controls__infinity-icon--pulse"
+								>
+									<path d="M6 16c5 0 7-8 12-8a4 4 0 0 1 0 8c-5 0-7-8-12-8a4 4 0 1 0 0 8"></path>
+								</svg>
+							</div>
+							<button class="button button--speed modal-win">Активировать форсаж</button>
+						</aside>
+					</div>
+				</div>
+			</section>
+
+			<section class="protection">
+				<div class="container">
+					<div class="protection__inner">
+						<div class="protection__group">
+							<div class="protection__group-sfer"></div>
+							<div class="protection__group-sfer-pattern">
+								<div class="protection__group-sfer-icons">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="14"
+										height="14"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="protection__group-sfer-icon"
+										aria-hidden="true"
+									>
+										<line x1="12" x2="12" y1="2" y2="22"></line>
+										<path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+									</svg>
+								</div>
+								<div class="protection__group-sfer-text">Cashback: Active</div>
+							</div>
+							<div class="protection__group-sfer-glow">
+								<div class="protection__group-sfer-icons">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="14"
+										height="14"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="lucide lucide-circle-check text-blue-400"
+										aria-hidden="true"
+									>
+										<circle cx="12" cy="12" r="10"></circle>
+										<path d="m9 12 2 2 4-4"></path>
+									</svg>
+								</div>
+								<div class="protection__group-sfer-text">99.9% Uptime</div>
+							</div>
+							<div class="protection__group-content">
+								<div class="protection__group-content-icons">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="48"
+										height="48"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="protection__group-content-icon"
+										aria-hidden="true"
+									>
+										<rect width="20" height="8" x="2" y="2" rx="2" ry="2"></rect>
+										<rect width="20" height="8" x="2" y="14" rx="2" ry="2"></rect>
+										<line x1="6" x2="6.01" y1="6" y2="6"></line>
+										<line x1="6" x2="6.01" y1="18" y2="18"></line>
+									</svg>
+								</div>
+								<div class="protection__group-content-title">Status</div>
+								<div class="protection__group-content-value">
+									<div class="protection__group-content-dot"></div>
+									<div class="protection__group-content-text">Immune</div>
+								</div>
+							</div>
+						</div>
+						<div class="protection__content">
+							<div class="protection__tag tag--default">
+								<div class="protection__tag-icon">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="18"
+										height="18"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									>
+										<path
+											d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+										></path>
+									</svg>
+								</div>
+								<div class="protection__tag-title">Safety Protocol 1.0</div>
+							</div>
+							<div class="protection__title-wrap">
+								<div class="protection__title">
+									Твой цифровой
+									<span class="protection__title-accent">иммунитет</span>
+								</div>
+								<div class="protection__text">
+									Первая в индустрии автоматическая страховка связи. Мы не просто обещаем скорость —
+									мы гарантируем каждый байт.
+								</div>
+							</div>
+							<div class="protection__items">
+								<div class="protection__item">
+									<div class="protection__item-title">Smart Cashback</div>
+									<div class="protection__item-text">
+										Автоматический возврат средств за каждую минуту простоя. Без заявлений и
+										звонков.
+									</div>
+								</div>
+								<div class="protection__item">
+									<div class="protection__item-title">DDoS Immunity</div>
+									<div class="protection__item-text">
+										Тройной контур защиты на уровне магистральных узлов. Твой узел остается в сети
+										всегда.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<div class="modal" id="thanks-modal">
+			<div class="modal__overlay"></div>
+			<div class="modal__content">
+				<button class="modal__close" id="modal-close">
+					<i class="ri-close-line"></i>
+				</button>
+
+				<div class="modal__icon">
+					<svg class="checkmark" viewBox="0 0 52 52">
+						<circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+						<path class="checkmark__check" fill="none" d="M14 27l7 7 17-17" />
+					</svg>
+				</div>
+
+				<h3 class="modal__title">Спасибо за заявку!</h3>
+				<p class="modal__text">Мы свяжемся с вами в ближайшее время.</p>
+			</div>
+		</div>
+
+		<div class="popup">
+			<!-- фоновые декорации попапа -->
+			<div class="popup__decor popup__decor--bg-left"></div>
+			<div class="popup__decor popup__decor--bg-right"></div>
+
+			<div class="popup__inner">
+				<div class="popup__header">
+					<div class="popup__heading">
+						<div class="popup__tag">
+							<span class="popup__tag-icon"></span>
+							<span class="popup__tag-text">System online</span>
+						</div>
+					</div>
+					<h3 class="popup__title">
+						Обратный
+						<span>звонок</span>
+					</h3>
+
+					<button class="popup__close button">
+						<i class="ri-close-line popup__close-icon"></i>
+					</button>
+				</div>
+				<p class="popup__text popup__text--line">
+					Введите свои данные, и мы свяжемся с вами в ближайшее время для настройки оборудования.
+				</p>
+				<form class="popup__form">
+					<div class="popup__field">
+						<label class="popup__label" for="name">Имя пользователя</label>
+						<div class="popup__field-group">
+							<input
+								class="popup__input"
+								id="name"
+								type="text"
+								placeholder="Alexey"
+								autocomplete="username"
+								required
+							/>
+
+							<!-- декор поля -->
+							<span class="popup__decor--field-top-left"></span>
+							<span class="popup__decor--field-bottom-right"></span>
+						</div>
+					</div>
+
+					<div class="popup__field">
+						<label class="popup__label" for="tel">Телефон</label>
+						<div class="popup__field-group">
+							<input
+								class="popup__input"
+								id="tel"
+								type="tel"
+								placeholder="+7 (___) ___-__-__"
+								autocomplete="tel"
+								required
+							/>
+
+							<span class="popup__decor--field-top-left"></span>
+							<span class="popup__decor--field-bottom-right"></span>
+						</div>
+					</div>
+
+					<button class="popup__button button" type="submit">Заказать звонок</button>
+				</form>
+				<div class="popup__decor-line"></div>
+				<div class="popup__info">
+					<div class="popup__info-item">
+						<span class="popup__info-icon"><i class="ri-lock-line"></i></span>
+						<span class="popup__info-text">Secure Encrypted</span>
+					</div>
+					<div class="popup__info-id">ID: 8842-XF</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="container">
+				<!-- TOP -->
+				<div class="footer__top">
+					<div class="footer__grid">
+						<!-- BRAND -->
+						<div class="footer__brand">
+							<a href="#" class="footer__logo">
+								<div class="footer__logo-icon"></div>
+
+								<div class="footer__logo-content">
+									<div class="footer__logo-title">
+										Sputnik
+										<span>NT</span>
+									</div>
+									<div class="footer__logo-subtitle">Всегда онлайн</div>
+								</div>
+							</a>
+
+							<div class="footer__description">
+								Провайдер нового поколения. Создаем цифровую экосистему для жизни и бизнеса на базе
+								собственной оптоволоконной магистрали.
+							</div>
+
+							<div class="footer__region">
+								<div class="footer__region-badge">
+									<div class="footer__region-icon"><i class="ri-global-line"></i></div>
+									<div class="footer__region-code">RU</div>
+								</div>
+								<div class="footer__region-name">Donetsk Region</div>
+							</div>
+						</div>
+
+						<!-- NAV -->
+						<div class="footer__nav">
+							<div class="footer__title footer__title--line">
+								<span class="footer__title-text">Сервисы</span>
+								<span class="footer__title-icon"><i class="ri-arrow-down-s-line"></i></span>
+							</div>
+							<nav class="footer__menu">
+								<a href="#" class="footer__link">Скоростной интернет</a>
+								<a href="#" class="footer__link">Цифровое ТВ</a>
+								<a href="#" class="footer__link">Видеонаблюдение</a>
+								<a href="#" class="footer__link">Умный дом</a>
+								<a href="#" class="footer__link">Оборудование</a>
+							</nav>
+						</div>
+
+						<!-- NAV -->
+						<div class="footer__nav">
+							<div class="footer__title footer__title--line">
+								<span class="footer__title-text">Компания</span>
+								<span class="footer__title-icon"><i class="ri-arrow-down-s-line"></i></span>
+							</div>
+							<nav class="footer__menu">
+								<a href="#" class="footer__link">О нас</a>
+								<a href="#" class="footer__link">Лицензия</a>
+								<a href="#" class="footer__link">Инвесторам</a>
+								<a href="#" class="footer__link">Новости</a>
+								<a href="#" class="footer__link">Контакты</a>
+							</nav>
+						</div>
+
+						<!-- CONTACTS -->
+						<div class="footer__contacts">
+							<div class="footer__phone">
+								<a href="tel:+88000000000" class="footer__phone-link">8 800 000-00-00</a>
+								<span class="footer__phone-text">Круглосуточная поддержка</span>
+							</div>
+
+							<button class="footer__button button modal-win">
+								<span class="footer__button-icon"><i class="ri-mail-send-line"></i></span>
+								<span class="footer__button-text">Написать письмо</span>
+								<span class="footer__button-icon icon--arrow">
+									<i class="ri-arrow-right-up-line"></i>
+								</span>
+							</button>
+
+							<div class="footer__schedule">
+								<span class="footer__schedule-icon"><i class="ri-time-line"></i></span>
+								<span class="footer__schedule-text">Офис: Пн–Пт 09:00 – 21:00</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- BOTTOM -->
+				<div class="footer__bottom">
+					<div class="footer__bottom-inner">
+						<div class="footer__copyright">© 2026 Telecom Future. All rights reserved.</div>
+
+						<div class="footer__legal">
+							<a href="#" class="footer__legal-link">Privacy Policy</a>
+							<a href="#" class="footer__legal-link">Terms of Service</a>
+							<a href="#" class="footer__legal-link">SLA Agreement</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="popup__overlay"></div>
+		<!-- <script src="https://cdn.tailwindcss.com"></script> -->
+		<script src="https://unpkg.com/imask"></script>
+		<!-- <link
+			href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+			rel="stylesheet"
+		/> -->
+	</body>
+</html>

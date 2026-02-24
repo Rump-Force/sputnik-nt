@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Новости</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/news.css" />
+
+		<script src="js/main.js" defer></script>
+		<!-- defer атрибут что будет загружаться в конце -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header class="header">
+			<!-- <canvas
+				id="wavesCanvas"
+				style="
+					position: absolute;
+					top: -410px;
+					left: 296px;
+					width: 100%;
+					height: 100%;
+					pointer-events: none;
+					z-index: 0;
+				"
+			></canvas> -->
+			<div class="container">
+				<div class="header__inner">
+					<a href="index.html" class="logo logo-sputnik">
+						<div class="orbits">
+							<div class="orbit orbit-1"></div>
+							<div class="orbit orbit-2"></div>
+							<div class="orbit orbit-3"></div>
+						</div>
+
+						<div class="logo__title">
+							Sputnik
+							<span class="logo__accent">nt</span>
+						</div>
+						<div class="logo__subtitle">Телекоммуникации</div>
+					</a>
+
+					<button class="button button__burger">
+						<span class="burger__line"></span>
+						<span class="burger__line"></span>
+						<span class="burger__line"></span>
+					</button>
+
+					<nav class="menu">
+						<ul class="menu__items">
+							<button class="button__close button">
+								<i class="ri-close-large-fill"></i>
+							</button>
+
+							<li class="menu__item">
+								<a href="index.html" class="menu__link">Главная</a>
+							</li>
+							<li class="menu__item">
+								<a href="services.html" class="menu__link">Услуги</a>
+							</li>
+							<li class="menu__item">
+								<a href="tariffs.html" class="menu__link">Тарифы</a>
+							</li>
+							<li class="menu__item">
+								<a href="stock.html" class="menu__link">Акции</a>
+							</li>
+							<li class="menu__item">
+								<a href="news.html" class="menu__link menu--active">Новости</a>
+							</li>
+							<li class="menu__item">
+								<a href="company.html" class="menu__link">О нас</a>
+							</li>
+							<li class="menu__item">
+								<a href="contacts.html" class="menu__link">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+
+					<div class="header__button">
+						<button class="neon modal-win">Get Consultation</button>
+					</div>
+				</div>
+			</div>
+			<div class="overlay"></div>
+		</header>
+
+		<div class="news__tabs">
+			<div class="container">
+				<div class="news__inner">
+					<div class="news__wrapper">
+						<div class="news__text">
+							<div class="news__text-tag">
+								<div class="news__text-circle"></div>
+								<div class="news__text-text">News Feed</div>
+							</div>
+							<div class="news__title">
+								Новости
+								<br />
+								<span class="news__title-accent">& События</span>
+							</div>
+						</div>
+						<div class="news__tabs-btn">
+							<button class="button news__button news__button-active" data-filter="all">Все</button>
+							<button class="button news__button" data-filter="ads">Объявления</button>
+							<button class="button news__button" data-filter="ktv">КТВ</button>
+							<button class="button news__button" data-filter="works">Тех.работы</button>
+						</div>
+					</div>
+
+					<div class="news__grid-tabs" id="news-container"></div>
+
+					<div class="news__more-wrapper">
+						<button id="load-more" class="button news__more-button">
+							<div class="news__more-cions">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									class="news__more-loop-right"
+									aria-hidden="true"
+								>
+									<path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path>
+									<path d="M21 3v5h-5"></path>
+									<path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path>
+									<path d="M8 16H3v5"></path>
+								</svg>
+							</div>
+							<span class="news__more-text">Загрузить больше</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+ <div class="news__overlay"></div>
+		<div class="news--modal">
+			<div class="modal__inner">
+				<div class="modal__header">
+					<div class="modal-header-tag">Тех. Работы</div>
+					<button class="button modal-header-close"><i class="ri-close-line"></i></button>
+				</div>
+				<div class="modal__body">
+					<div class="modal__title">Плановая модернизация оборудования</div>
+					<div class="modal__time">
+						<div class="modal__time-icons"><i class="ri-time-line"></i></div>
+						<div class="modal__time-text">18 Марта, 08:00</div>
+					</div>
+					<div class="modal__images">
+						<img src="" alt="" class="modal__image" />
+					</div>
+					<div class="modal__description">
+						25 марта с 02:00 до 06:00 будут проводиться работы по замене магистрального узла в
+						районе "Зеленый". Возможны перерывы в доступе к сети Интернет до 30 минут.
+					</div>
+					<div class="modal__details">
+						Модернизация направлена на улучшение стабильности соединения и увеличение пропускной
+						способности сети в часы пик. Мы приносим извинения за возможные неудобства.
+					</div>
+					<div class="modal__footer">
+						<button class="button modal__button-back">
+							<div class="modal__button-icons"><i class="ri-arrow-left-line"></i></div>
+							<div class="modal__button-title">Назад к новостям</div>
+						</button>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+		<div class="modal" id="thanks-modal">
+			<div class="modal__overlay"></div>
+			<div class="modal__content">
+				<button class="modal__close" id="modal-close">
+					<i class="ri-close-line"></i>
+				</button>
+
+				<div class="modal__icon">
+					<svg class="checkmark" viewBox="0 0 52 52">
+						<circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+						<path class="checkmark__check" fill="none" d="M14 27l7 7 17-17" />
+					</svg>
+				</div>
+
+				<h3 class="modal__title">Спасибо за заявку!</h3>
+				<p class="modal__text">Мы свяжемся с вами в ближайшее время.</p>
+			</div>
+		</div>
+
+		<div class="popup">
+			<!-- фоновые декорации попапа -->
+			<div class="popup__decor popup__decor--bg-left"></div>
+			<div class="popup__decor popup__decor--bg-right"></div>
+
+			<div class="popup__inner">
+				<div class="popup__header">
+					<div class="popup__heading">
+						<div class="popup__tag">
+							<span class="popup__tag-icon"></span>
+							<span class="popup__tag-text">System online</span>
+						</div>
+					</div>
+					<h3 class="popup__title">
+						Обратный
+						<span>звонок</span>
+					</h3>
+
+					<button class="popup__close button">
+						<i class="ri-close-line popup__close-icon"></i>
+					</button>
+				</div>
+				<p class="popup__text popup__text--line">
+					Введите свои данные, и мы свяжемся с вами в ближайшее время для настройки оборудования.
+				</p>
+				<form class="popup__form">
+					<div class="popup__field">
+						<label class="popup__label" for="name">Имя пользователя</label>
+						<div class="popup__field-group">
+							<input
+								class="popup__input"
+								id="name"
+								type="text"
+								placeholder="Alexey"
+								autocomplete="username"
+								required
+							/>
+
+							<!-- декор поля -->
+							<span class="popup__decor--field-top-left"></span>
+							<span class="popup__decor--field-bottom-right"></span>
+						</div>
+					</div>
+
+					<div class="popup__field">
+						<label class="popup__label" for="tel">Телефон</label>
+						<div class="popup__field-group">
+							<input
+								class="popup__input"
+								id="tel"
+								type="tel"
+								placeholder="+7 (___) ___-__-__"
+								autocomplete="tel"
+								required
+							/>
+
+							<span class="popup__decor--field-top-left"></span>
+							<span class="popup__decor--field-bottom-right"></span>
+						</div>
+					</div>
+
+					<button class="popup__button button" type="submit">Заказать звонок</button>
+				</form>
+				<div class="popup__decor-line"></div>
+				<div class="popup__info">
+					<div class="popup__info-item">
+						<span class="popup__info-icon"><i class="ri-lock-line"></i></span>
+						<span class="popup__info-text">Secure Encrypted</span>
+					</div>
+					<div class="popup__info-id">ID: 8842-XF</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="container">
+				<!-- TOP -->
+				<div class="footer__top">
+					<div class="footer__grid">
+						<!-- BRAND -->
+						<div class="footer__brand">
+							<a href="#" class="footer__logo">
+								<div class="footer__logo-icon"></div>
+
+								<div class="footer__logo-content">
+									<div class="footer__logo-title">
+										Sputnik
+										<span>NT</span>
+									</div>
+									<div class="footer__logo-subtitle">Всегда онлайн</div>
+								</div>
+							</a>
+
+							<div class="footer__description">
+								Провайдер нового поколения. Создаем цифровую экосистему для жизни и бизнеса на базе
+								собственной оптоволоконной магистрали.
+							</div>
+
+							<div class="footer__region">
+								<div class="footer__region-badge">
+									<div class="footer__region-icon"><i class="ri-global-line"></i></div>
+									<div class="footer__region-code">RU</div>
+								</div>
+								<div class="footer__region-name">Donetsk Region</div>
+							</div>
+						</div>
+
+						<!-- NAV -->
+						<div class="footer__nav">
+							<div class="footer__title footer__title--line">
+								<span class="footer__title-text">Сервисы</span>
+								<span class="footer__title-icon"><i class="ri-arrow-down-s-line"></i></span>
+							</div>
+							<nav class="footer__menu">
+								<a href="#" class="footer__link">Скоростной интернет</a>
+								<a href="#" class="footer__link">Цифровое ТВ</a>
+								<a href="#" class="footer__link">Видеонаблюдение</a>
+								<a href="#" class="footer__link">Умный дом</a>
+								<a href="#" class="footer__link">Оборудование</a>
+							</nav>
+						</div>
+
+						<!-- NAV -->
+						<div class="footer__nav">
+							<div class="footer__title footer__title--line">
+								<span class="footer__title-text">Компания</span>
+								<span class="footer__title-icon"><i class="ri-arrow-down-s-line"></i></span>
+							</div>
+							<nav class="footer__menu">
+								<a href="#" class="footer__link">О нас</a>
+								<a href="#" class="footer__link">Лицензия</a>
+								<a href="#" class="footer__link">Инвесторам</a>
+								<a href="#" class="footer__link">Новости</a>
+								<a href="#" class="footer__link">Контакты</a>
+							</nav>
+						</div>
+
+						<!-- CONTACTS -->
+						<div class="footer__contacts">
+							<div class="footer__phone">
+								<a href="tel:+88000000000" class="footer__phone-link">8 800 000-00-00</a>
+								<span class="footer__phone-text">Круглосуточная поддержка</span>
+							</div>
+
+							<button class="footer__button button modal-win">
+								<span class="footer__button-icon"><i class="ri-mail-send-line"></i></span>
+								<span class="footer__button-text">Написать письмо</span>
+								<span class="footer__button-icon icon--arrow">
+									<i class="ri-arrow-right-up-line"></i>
+								</span>
+							</button>
+
+							<div class="footer__schedule">
+								<span class="footer__schedule-icon"><i class="ri-time-line"></i></span>
+								<span class="footer__schedule-text">Офис: Пн–Пт 09:00 – 21:00</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- BOTTOM -->
+				<div class="footer__bottom">
+					<div class="footer__bottom-inner">
+						<div class="footer__copyright">© 2026 Telecom Future. All rights reserved.</div>
+
+						<div class="footer__legal">
+							<a href="#" class="footer__legal-link">Privacy Policy</a>
+							<a href="#" class="footer__legal-link">Terms of Service</a>
+							<a href="#" class="footer__legal-link">SLA Agreement</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="popup__overlay"></div>
+		<!-- <script src="https://cdn.tailwindcss.com"></script> -->
+		<script src="js/news-js.js"></script>
+		<script src="https://unpkg.com/imask"></script>
+		<link
+			href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+			rel="stylesheet"
+		/>
+	</body>
+</html>

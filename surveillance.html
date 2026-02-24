@@ -1,0 +1,843 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sputnik Интернет и цифровое ТВ</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/surveillance.css" />
+
+		<script src="js/main.js" defer></script>
+		<!-- defer атрибут что будет загружаться в конце -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header class="header">
+			<!-- <canvas
+				id="wavesCanvas"
+				style="
+					position: absolute;
+					top: -410px;
+					left: 296px;
+					width: 100%;
+					height: 100%;
+					pointer-events: none;
+					z-index: 0;
+				"
+			></canvas> -->
+			<div class="container">
+				<div class="header__inner">
+					<a href="index.html" class="logo logo-sputnik">
+						<div class="orbits">
+							<div class="orbit orbit-1"></div>
+							<div class="orbit orbit-2"></div>
+							<div class="orbit orbit-3"></div>
+						</div>
+
+						<div class="logo__title">
+							Sputnik
+							<span class="logo__accent">nt</span>
+						</div>
+						<div class="logo__subtitle">Телекоммуникации</div>
+					</a>
+
+					<button class="button button__burger">
+						<span class="burger__line"></span>
+						<span class="burger__line"></span>
+						<span class="burger__line"></span>
+					</button>
+
+					<nav class="menu">
+						<ul class="menu__items">
+							<button class="button__close button">
+								<i class="ri-close-large-fill"></i>
+							</button>
+
+							<li class="menu__item">
+								<a href="index.html" class="menu__link">Главная</a>
+							</li>
+							<li class="menu__item">
+								<a href="services.html" class="menu__link">Услуги</a>
+							</li>
+							<li class="menu__item">
+								<a href="tariffs.html" class="menu__link">Тарифы</a>
+							</li>
+							<li class="menu__item">
+								<a href="stock.html" class="menu__link">Акции</a>
+							</li>
+							<li class="menu__item">
+								<a href="news.html" class="menu__link">Новости</a>
+							</li>
+							<li class="menu__item">
+								<a href="company.html" class="menu__link">О нас</a>
+							</li>
+							<li class="menu__item">
+								<a href="contacts.html" class="menu__link">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+
+					<div class="header__button">
+						<button class="neon modal-win">Get Consultation</button>
+					</div>
+				</div>
+			</div>
+			<div class="overlay"></div>
+		</header>
+
+		<section class="sputnik">
+			<div class="container">
+				<div class="sputnik__inner">
+					<div class="sputnik__content">
+						<div class="sputnik__tag">
+							<div class="sputnik__tag-icons"><i class="ri-shield-line"></i></div>
+							<div class="sputnik__tag-title">Sputnik Security Hub</div>
+						</div>
+						<div class="sputnik__title">
+							Sputnik.Net:
+							<br />
+							<span class="sputnik__title-accent1">Ваш мир под</span>
+							<br />
+							<span class="sputnik__title-accent2">полным контролем</span>
+						</div>
+						<div class="sputnik__txt">
+							Интеллектуальная система видеонаблюдения 24/7. Облачный архив, локальное хранение и
+							доступ из любой точки планеты в один клик.
+						</div>
+						<a href="tariffs.html" class="button sputnik__button" target="_blank">Выбрать тариф</a>
+					</div>
+					<div class="sputnik__card">
+						<div class="sputnik__vebcam">
+							<div class="sputnik__card-decor">
+								<div class="sputnik__card-text">ACTIVE SENSOR</div>
+								<div class="sputnik__card-circle">
+									<div class="sputnik__card-circle-box">
+										<div class="sputnik__card-circle-linz"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="cameras">
+					<div class="cameras__wrap">
+						<div class="cameras__namt">
+							<div class="cameras__title">Live 24/7 Monitoring</div>
+							<div class="cameras__text">
+								Мгновенный доступ к камерам из любой точки мира. Запись архива в облако и на
+								локальные сервера.
+							</div>
+						</div>
+						<div class="cameras__tag">
+							<div class="cameras__tag-status">Live Feed Active</div>
+						</div>
+					</div>
+					<div class="cameras__observations">
+						<div class="cameras__observations-inner">
+							<div class="cameras__observations-item">
+								<div class="cameras__observations-tag">
+									<div class="cameras__observations-tag-title">cam 01</div>
+									<div class="cameras__observations-tag-cirlce"></div>
+								</div>
+								<div class="cameras__observations-record">
+									<div class="observations__items">
+										<div class="observations__item">
+											<div class="observations__item-title">Rec</div>
+										</div>
+										<div class="observations__item">
+											<div class="observations__item-title">1080p</div>
+										</div>
+										<div class="observations__item">
+											<div class="observations__item-title">30fps</div>
+										</div>
+									</div>
+								</div>
+								<div class="cameras__observations-play">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="lucide-circle-play"
+										aria-hidden="true"
+									>
+										<path
+											d="M9 9.003a1 1 0 0 1 1.517-.859l4.997 2.997a1 1 0 0 1 0 1.718l-4.997 2.997A1 1 0 0 1 9 14.996z"
+										></path>
+										<circle cx="12" cy="12" r="10"></circle>
+									</svg>
+								</div>
+							</div>
+							<div class="cameras__observations-item">
+								<div class="cameras__observations-tag">
+									<div class="cameras__observations-tag-title">cam 02</div>
+									<!-- <div class="cameras__observations-tag-cirlce"></div> -->
+								</div>
+								<div class="cameras__observations-record">
+									<div class="observations__items">
+										<div class="observations__item">
+											<div class="observations__item-title">Rec</div>
+										</div>
+										<div class="observations__item">
+											<div class="observations__item-title">1080p</div>
+										</div>
+										<div class="observations__item">
+											<div class="observations__item-title">30fps</div>
+										</div>
+									</div>
+								</div>
+								<div class="cameras__observations-play">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="lucide-circle-play"
+										aria-hidden="true"
+									>
+										<path
+											d="M9 9.003a1 1 0 0 1 1.517-.859l4.997 2.997a1 1 0 0 1 0 1.718l-4.997 2.997A1 1 0 0 1 9 14.996z"
+										></path>
+										<circle cx="12" cy="12" r="10"></circle>
+									</svg>
+								</div>
+							</div>
+							<div class="cameras__observations-item">
+								<div class="cameras__observations-tag">
+									<div class="cameras__observations-tag-title">cam 03</div>
+									<!-- <div class="cameras__observations-tag-cirlce"></div> -->
+								</div>
+								<div class="cameras__observations-record">
+									<div class="observations__items">
+										<div class="observations__item">
+											<div class="observations__item-title">Rec</div>
+										</div>
+										<div class="observations__item">
+											<div class="observations__item-title">1080p</div>
+										</div>
+										<div class="observations__item">
+											<div class="observations__item-title">30fps</div>
+										</div>
+									</div>
+								</div>
+								<div class="cameras__observations-play">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="lucide-circle-play"
+										aria-hidden="true"
+									>
+										<path
+											d="M9 9.003a1 1 0 0 1 1.517-.859l4.997 2.997a1 1 0 0 1 0 1.718l-4.997 2.997A1 1 0 0 1 9 14.996z"
+										></path>
+										<circle cx="12" cy="12" r="10"></circle>
+									</svg>
+								</div>
+							</div>
+							<div class="cameras__observations-item">
+								<div class="cameras__observations-tag">
+									<div class="cameras__observations-tag-title">cam 04</div>
+									<!-- <div class="cameras__observations-tag-cirlce"></div> -->
+								</div>
+								<div class="cameras__observations-record">
+									<div class="observations__items">
+										<div class="observations__item">
+											<div class="observations__item-title">Rec</div>
+										</div>
+										<div class="observations__item">
+											<div class="observations__item-title">1080p</div>
+										</div>
+										<div class="observations__item">
+											<div class="observations__item-title">30fps</div>
+										</div>
+									</div>
+								</div>
+								<div class="cameras__observations-play">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="lucide-circle-play"
+										aria-hidden="true"
+									>
+										<path
+											d="M9 9.003a1 1 0 0 1 1.517-.859l4.997 2.997a1 1 0 0 1 0 1.718l-4.997 2.997A1 1 0 0 1 9 14.996z"
+										></path>
+										<circle cx="12" cy="12" r="10"></circle>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="mobile">
+			<div class="container">
+				<div class="mobile__inner">
+					<div class="mobile__telefons">
+						<div class="mobile__telefon">
+							<div class="mobile__telefon-screen">
+								<div class="mobile__telefon-header">
+									<div class="mobile__telefon-title">My Home</div>
+									<div class="mobile__telefon-shield"><i class="ri-shield-line"></i></div>
+								</div>
+								<div class="mobile__telefon-body">
+									<div class="mobile__telefon-video">
+										<div class="mobile__telefon-live">Live</div>
+									</div>
+									<div class="mobile__telefon-timline">
+										<div class="mobile__telefon-title">Time line</div>
+										<div class="mobile__telefon-items">
+											<div class="mobile__telefon-item">
+												<div class="mobile__telefon-item-big"></div>
+												<div class="mobile__telefon-item-small"></div>
+												<div class="mobile__telefon-item-small"></div>
+											</div>
+											<div class="mobile__telefon-item">
+												<div class="mobile__telefon-item-big"></div>
+												<div class="mobile__telefon-item-small"></div>
+												<div class="mobile__telefon-item-small"></div>
+											</div>
+											<div class="mobile__telefon-item">
+												<div class="mobile__telefon-item-big"></div>
+												<div class="mobile__telefon-item-small"></div>
+												<div class="mobile__telefon-item-small"></div>
+											</div>
+											<div class="mobile__telefon-item">
+												<div class="mobile__telefon-item-big"></div>
+												<div class="mobile__telefon-item-small"></div>
+												<div class="mobile__telefon-item-small"></div>
+											</div>
+											<div class="mobile__telefon-item">
+												<div class="mobile__telefon-item-big"></div>
+												<div class="mobile__telefon-item-small"></div>
+												<div class="mobile__telefon-item-small"></div>
+											</div>
+											<div class="mobile__telefon-item">
+												<div class="mobile__telefon-item-big"></div>
+												<div class="mobile__telefon-item-small"></div>
+												<div class="mobile__telefon-item-small"></div>
+											</div>
+											<div class="mobile__telefon-item">
+												<div class="mobile__telefon-item-big"></div>
+												<div class="mobile__telefon-item-small"></div>
+												<!-- <div class="mobile__telefon-item-small"></div> -->
+											</div>
+										</div>
+									</div>
+									<div class="mobile__telefon-info">
+										<div class="mobile__telefon-info-icons">
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												stroke="currentColor"
+												stroke-width="2"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												class="lucide-activity"
+												aria-hidden="true"
+											>
+												<path
+													d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"
+												></path>
+											</svg>
+										</div>
+										<div class="mobile__telefon-info-text">
+											<div class="mobile__telefon-info-title">Motion Detected</div>
+											<div class="mobile__telefon-info-desccription">
+												Backyard Camera • 2 min ago
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mobile__content">
+						<div class="mobile__subtitle">Mobile control</div>
+						<div class="mobile__title">
+							Управление
+							<br />
+							в один клик.
+						</div>
+						<div class="mobile__text">
+							Приложение Sputnik Control дает вам полную власть над системой безопасности. Получайте
+							push-уведомления о движении, просматривайте архив и управляйте доступом.
+						</div>
+						<div class="mobile__items">
+							<div class="mobile__item">
+								<div class="mobile__item-icons mobile-interfs">
+									<i class="ri-smartphone-line"></i>
+								</div>
+								<div class="mobile__item-text">Шифрование данных</div>
+							</div>
+							<div class="mobile__item">
+								<div class="mobile__item-icons shield-interfs"><i class="ri-shield-line"></i></div>
+								<div class="mobile__item-text">Интуитивный интерфейс</div>
+							</div>
+						</div>
+						<button class="button mobile__button">Скачать приложение</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="server">
+			<div class="container">
+				<div class="server__layout">
+					<div class="server__content">
+						<div class="server__tag">
+							<div class="server__tag-icons">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="18"
+									height="18"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									class="server__tag-icon"
+									aria-hidden="true"
+								>
+									<line x1="22" x2="2" y1="12" y2="12"></line>
+									<path
+										d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"
+									></path>
+									<line x1="6" x2="6.01" y1="16" y2="16"></line>
+									<line x1="10" x2="10.01" y1="16" y2="16"></line>
+								</svg>
+							</div>
+							<div class="server__tag-title">Приватное облако</div>
+						</div>
+						<div class="server__title">Масштабируемое хранилище</div>
+						<div class="server__text">
+							Мы не ограничиваем вас в выборе. Используйте защищенное облако Sputnik Cloud для
+							мгновенного доступа или установите персональный видеосервер для архива любой глубины.
+						</div>
+						<div class="server__items">
+							<div class="server__item">
+								<div class="server__item-icons">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="20"
+										height="20"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="server__item-icon"
+										aria-hidden="true"
+									>
+										<circle cx="12" cy="12" r="10"></circle>
+										<path d="m9 12 2 2 4-4"></path>
+									</svg>
+								</div>
+								<div class="server__item-title">Запись в 4K Ultra HD без сжатия</div>
+							</div>
+							<div class="server__item">
+								<div class="server__item-icons">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="20"
+										height="20"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="server__item-icon"
+										aria-hidden="true"
+									>
+										<circle cx="12" cy="12" r="10"></circle>
+										<path d="m9 12 2 2 4-4"></path>
+									</svg>
+								</div>
+								<div class="server__item-title">Гибридное хранение: Локально + Облако</div>
+							</div>
+							<div class="server__item">
+								<div class="server__item-icons">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="20"
+										height="20"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="server__item-icon"
+										aria-hidden="true"
+									>
+										<circle cx="12" cy="12" r="10"></circle>
+										<path d="m9 12 2 2 4-4"></path>
+									</svg>
+								</div>
+								<div class="server__item-title">Шифрование данных по ГОСТ</div>
+							</div>
+							<div class="server__item">
+								<div class="server__item-icons">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="20"
+										height="20"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="server__item-icon"
+										aria-hidden="true"
+									>
+										<circle cx="12" cy="12" r="10"></circle>
+										<path d="m9 12 2 2 4-4"></path>
+									</svg>
+								</div>
+								<div class="server__item-title">RAID-массивы для защиты от сбоев</div>
+							</div>
+						</div>
+					</div>
+					<div class="server__group">
+						<div class="server__room">
+							<div class="room__tag">
+								<div class="room__text">Sputnik Server</div>
+							</div>
+							<div class="room__items">
+								<div class="room__item">
+									<div class="room__item-text">SLOT_01</div>
+								</div>
+								<div class="room__item">
+									<div class="room__item-text">SLOT_02</div>
+								</div>
+								<div class="room__item">
+									<div class="room__item-text">SLOT_03</div>
+								</div>
+								<div class="room__item">
+									<div class="room__item-text">SLOT_04</div>
+								</div>
+							</div>
+						</div>
+						<div class="hard__box">
+							<div class="hard-icons">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="48"
+									height="48"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									class="hard-icon"
+									aria-hidden="true"
+								>
+									<line x1="22" x2="2" y1="12" y2="12"></line>
+									<path
+										d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"
+									></path>
+									<line x1="6" x2="6.01" y1="16" y2="16"></line>
+									<line x1="10" x2="10.01" y1="16" y2="16"></line>
+								</svg>
+							</div>
+							<div class="hard-title">8</div>
+							<div class="hard-subtitle">ТВ</div>
+							<div class="hard-name">NVMe SSD</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="monitoring">
+			<div class="container">
+				<div class="monitoring__items">
+					<div class="monitoring__item">
+						<div class="monitoring__item-icons monitoring__item-icon--detector">
+							<i class="ri-pulse-line"></i>
+						</div>
+						<div class="monitoring__content">
+							<div class="monitoring__title">Детектор движения</div>
+							<div class="monitoring__text">
+								Умные уведомления только по делу. Игнорирует домашних животных.
+							</div>
+						</div>
+					</div>
+					<div class="monitoring__item">
+						<div class="monitoring__item-icons monitoring__item-icon--vision">
+							<i class="ri-moon-line"></i>
+						</div>
+						<div class="monitoring__content">
+							<div class="monitoring__title">Ночное видение</div>
+							<div class="monitoring__text">
+								ИК-подсветка до 30 метров. Четкая картинка даже в полной темноте.
+							</div>
+						</div>
+					</div>
+					<div class="monitoring__item">
+						<div class="monitoring__item-icons monitoring__item-icon--archive">
+							<i class="ri-cloud-line"></i>
+						</div>
+						<div class="monitoring__content">
+							<div class="monitoring__title">Облачный архив</div>
+							<div class="monitoring__text">
+								Хранение записей до 30 дней. Никто не сможет удалить ваши данные.
+							</div>
+						</div>
+					</div>
+					<div class="monitoring__item">
+						<div class="monitoring__item-icons monitoring__item-icon--access">
+							<i class="ri-server-line"></i>
+						</div>
+						<div class="monitoring__content">
+							<div class="monitoring__title">Локальный доступ</div>
+							<div class="monitoring__text">
+								Работает даже без интернета. Запись на карту памяти или сервер.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="modal" id="thanks-modal">
+			<div class="modal__overlay"></div>
+			<div class="modal__content">
+				<button class="modal__close" id="modal-close">
+					<i class="ri-close-line"></i>
+				</button>
+
+				<div class="modal__icon">
+					<svg class="checkmark" viewBox="0 0 52 52">
+						<circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+						<path class="checkmark__check" fill="none" d="M14 27l7 7 17-17" />
+					</svg>
+				</div>
+
+				<h3 class="modal__title">Спасибо за заявку!</h3>
+				<p class="modal__text">Мы свяжемся с вами в ближайшее время.</p>
+			</div>
+		</div>
+
+		<div class="popup">
+			<!-- фоновые декорации попапа -->
+			<div class="popup__decor popup__decor--bg-left"></div>
+			<div class="popup__decor popup__decor--bg-right"></div>
+
+			<div class="popup__inner">
+				<div class="popup__header">
+					<div class="popup__heading">
+						<div class="popup__tag">
+							<span class="popup__tag-icon"></span>
+							<span class="popup__tag-text">System online</span>
+						</div>
+					</div>
+					<h3 class="popup__title">
+						Обратный
+						<span>звонок</span>
+					</h3>
+
+					<button class="popup__close button">
+						<i class="ri-close-line popup__close-icon"></i>
+					</button>
+				</div>
+				<p class="popup__text popup__text--line">
+					Введите свои данные, и мы свяжемся с вами в ближайшее время для настройки оборудования.
+				</p>
+				<form class="popup__form">
+					<div class="popup__field">
+						<label class="popup__label" for="name">Имя пользователя</label>
+						<div class="popup__field-group">
+							<input
+								class="popup__input"
+								id="name"
+								type="text"
+								placeholder="Alexey"
+								autocomplete="username"
+								required
+							/>
+
+							<!-- декор поля -->
+							<span class="popup__decor--field-top-left"></span>
+							<span class="popup__decor--field-bottom-right"></span>
+						</div>
+					</div>
+
+					<div class="popup__field">
+						<label class="popup__label" for="tel">Телефон</label>
+						<div class="popup__field-group">
+							<input
+								class="popup__input"
+								id="tel"
+								type="tel"
+								placeholder="+7 (___) ___-__-__"
+								autocomplete="tel"
+								required
+							/>
+
+							<span class="popup__decor--field-top-left"></span>
+							<span class="popup__decor--field-bottom-right"></span>
+						</div>
+					</div>
+
+					<button class="popup__button button" type="submit">Заказать звонок</button>
+				</form>
+				<div class="popup__decor-line"></div>
+				<div class="popup__info">
+					<div class="popup__info-item">
+						<span class="popup__info-icon"><i class="ri-lock-line"></i></span>
+						<span class="popup__info-text">Secure Encrypted</span>
+					</div>
+					<div class="popup__info-id">ID: 8842-XF</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="container">
+				<!-- TOP -->
+				<div class="footer__top">
+					<div class="footer__grid">
+						<!-- BRAND -->
+						<div class="footer__brand">
+							<a href="#" class="footer__logo">
+								<div class="footer__logo-icon"></div>
+
+								<div class="footer__logo-content">
+									<div class="footer__logo-title">
+										Sputnik
+										<span>NT</span>
+									</div>
+									<div class="footer__logo-subtitle">Всегда онлайн</div>
+								</div>
+							</a>
+
+							<div class="footer__description">
+								Провайдер нового поколения. Создаем цифровую экосистему для жизни и бизнеса на базе
+								собственной оптоволоконной магистрали.
+							</div>
+
+							<div class="footer__region">
+								<div class="footer__region-badge">
+									<div class="footer__region-icon"><i class="ri-global-line"></i></div>
+									<div class="footer__region-code">RU</div>
+								</div>
+								<div class="footer__region-name">Donetsk Region</div>
+							</div>
+						</div>
+
+						<!-- NAV -->
+						<div class="footer__nav">
+							<div class="footer__title footer__title--line">
+								<span class="footer__title-text">Сервисы</span>
+								<span class="footer__title-icon"><i class="ri-arrow-down-s-line"></i></span>
+							</div>
+							<nav class="footer__menu">
+								<a href="#" class="footer__link">Скоростной интернет</a>
+								<a href="#" class="footer__link">Цифровое ТВ</a>
+								<a href="#" class="footer__link">Видеонаблюдение</a>
+								<a href="#" class="footer__link">Умный дом</a>
+								<a href="#" class="footer__link">Оборудование</a>
+							</nav>
+						</div>
+
+						<!-- NAV -->
+						<div class="footer__nav">
+							<div class="footer__title footer__title--line">
+								<span class="footer__title-text">Компания</span>
+								<span class="footer__title-icon"><i class="ri-arrow-down-s-line"></i></span>
+							</div>
+							<nav class="footer__menu">
+								<a href="#" class="footer__link">О нас</a>
+								<a href="#" class="footer__link">Лицензия</a>
+								<a href="#" class="footer__link">Инвесторам</a>
+								<a href="#" class="footer__link">Новости</a>
+								<a href="#" class="footer__link">Контакты</a>
+							</nav>
+						</div>
+
+						<!-- CONTACTS -->
+						<div class="footer__contacts">
+							<div class="footer__phone">
+								<a href="tel:+88000000000" class="footer__phone-link">8 800 000-00-00</a>
+								<span class="footer__phone-text">Круглосуточная поддержка</span>
+							</div>
+
+							<button class="footer__button button modal-win">
+								<span class="footer__button-icon"><i class="ri-mail-send-line"></i></span>
+								<span class="footer__button-text">Написать письмо</span>
+								<span class="footer__button-icon icon--arrow">
+									<i class="ri-arrow-right-up-line"></i>
+								</span>
+							</button>
+
+							<div class="footer__schedule">
+								<span class="footer__schedule-icon"><i class="ri-time-line"></i></span>
+								<span class="footer__schedule-text">Офис: Пн–Пт 09:00 – 21:00</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- BOTTOM -->
+				<div class="footer__bottom">
+					<div class="footer__bottom-inner">
+						<div class="footer__copyright">© 2026 Telecom Future. All rights reserved.</div>
+
+						<div class="footer__legal">
+							<a href="#" class="footer__legal-link">Privacy Policy</a>
+							<a href="#" class="footer__legal-link">Terms of Service</a>
+							<a href="#" class="footer__legal-link">SLA Agreement</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="popup__overlay"></div>
+		<!-- <script src="https://cdn.tailwindcss.com"></script> -->
+		<script src="https://unpkg.com/imask"></script>
+		<link
+			href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+			rel="stylesheet"
+		/>
+	</body>
+</html>

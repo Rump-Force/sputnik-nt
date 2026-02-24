@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Контакты</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/contacts.css" />
+
+		<script src="js/main.js" defer></script>
+		<!-- defer атрибут что будет загружаться в конце -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header class="header">
+			<!-- <canvas
+				id="wavesCanvas"
+				style="
+					position: absolute;
+					top: -410px;
+					left: 296px;
+					width: 100%;
+					height: 100%;
+					pointer-events: none;
+					z-index: 0;
+				"
+			></canvas> -->
+			<div class="container">
+				<div class="header__inner">
+					<a href="index.html" class="logo logo-sputnik">
+						<div class="orbits">
+							<div class="orbit orbit-1"></div>
+							<div class="orbit orbit-2"></div>
+							<div class="orbit orbit-3"></div>
+						</div>
+
+						<div class="logo__title">
+							Sputnik
+							<span class="logo__accent">nt</span>
+						</div>
+						<div class="logo__subtitle">Телекоммуникации</div>
+					</a>
+
+					<button class="button button__burger">
+						<span class="burger__line"></span>
+						<span class="burger__line"></span>
+						<span class="burger__line"></span>
+					</button>
+
+					<nav class="menu">
+						<ul class="menu__items">
+							<button class="button__close button">
+								<i class="ri-close-large-fill"></i>
+							</button>
+
+							<li class="menu__item">
+								<a href="index.html" class="menu__link">Главная</a>
+							</li>
+							<li class="menu__item">
+								<a href="services.html" class="menu__link ">Услуги</a>
+							</li>
+							<li class="menu__item">
+								<a href="tariffs.html" class="menu__link">Тарифы</a>
+							</li>
+							<li class="menu__item">
+								<a href="stock.html" class="menu__link">Акции</a>
+							</li>
+							<li class="menu__item">
+								<a href="news.html" class="menu__link">Новости</a>
+							</li>
+							<li class="menu__item">
+								<a href="company.html" class="menu__link">О нас</a>
+							</li>
+							<li class="menu__item">
+								<a href="contacts.html" class="menu__link menu--active">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+
+					<div class="header__button">
+						<button class="neon modal-win">Get Consultation</button>
+					</div>
+				</div>
+			</div>
+			<div class="overlay"></div>
+		</header>
+
+		<section class="contact ">
+			<div class="container">
+				<div class="contact__group">
+					<div class="contact__wrapp">
+						<div class="contact__tag">
+							<div class="contact__tag-icons">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									class="contact__tag-icon"
+									aria-hidden="true"
+								>
+									<circle cx="12" cy="12" r="10"></circle>
+									<path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+									<path d="M2 12h20"></path>
+								</svg>
+							</div>
+							<div class="contact__tag-text">Contact Center</div>
+						</div>
+						<div class="contact__title">Мы всегда на связи.</div>
+						<div class="contact__description">
+							Посетите наш флагманский офис или свяжитесь с поддержкой в любое удобное время.
+						</div>
+					</div>
+					<div class="contact__inner">
+						<div class="contact__map">
+							<!-- <div id="map" class="contact__map-wrap" style="width: 600px; height: 650px"></div> -->
+							<div id="map" class="contact__map-wrap"></div>
+							<!-- <div id="map"></div> -->
+						</div>
+
+						<div class="contact__info">
+							<div class="contacts__time-work">
+								<div class="contacts__time-icon">
+									<div class="contacts__time-clock">
+										<div class="contacts__time-clock-watch"></div>
+										<div class="contacts__time-clock-minutes"></div>
+										<div class="contacts__time-clock-mechanism"></div>
+									</div>
+								</div>
+								<div class="contacts__time-work--text">
+									<div class="contacts__time-work-tile">Режим работы</div>
+									<div class="contacts__time-work--schedule">08:00-18:00</div>
+								</div>
+								<div class="contacts__time-close">
+									<div class="contacts__time-close--circle"></div>
+									<div class="contacts__time-close--text">Закрыто</div>
+								</div>
+							</div>
+							<div class="contact__items">
+								<div class="contact__item">
+									<a href="tel:+79493003030" class="contacts__links">
+										<div class="contacts__link-icons">
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												stroke="currentColor"
+												stroke-width="2"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												class="lucide-phone"
+												aria-hidden="true"
+											>
+												<path
+													d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"
+												></path>
+											</svg>
+										</div>
+										<div class="contacts__link-text">Техподдержка</div>
+										<div class="contacts__link-number">+7 (949) 300-30-30</div>
+									</a>
+								</div>
+								<div class="contact__item">
+									<a href="tel:+79493003033" class="contacts__links">
+										<div class="contacts__link-icons">
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												stroke="currentColor"
+												stroke-width="2"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												class="lucide-phone"
+												aria-hidden="true"
+											>
+												<path
+													d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"
+												></path>
+											</svg>
+										</div>
+										<div class="contacts__link-text">Техподдержка</div>
+										<div class="contacts__link-number">+7 (949) 300-30-31</div>
+									</a>
+								</div>
+							</div>
+							<div class="contacts__location">
+								<div class="contacts__location">
+									<div class="contacts__location-items">
+										<div class="contacts__location-item">
+											<div class="contacts__location-icon">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="24"
+													height="24"
+													viewBox="0 0 24 24"
+													fill="none"
+													stroke="currentColor"
+													stroke-width="2"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													class="lucide-map-pin"
+													aria-hidden="true"
+												>
+													<path
+														d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+													></path>
+													<circle cx="12" cy="10" r="3"></circle>
+												</svg>
+											</div>
+											<div class="contacts__location-info">
+												<div class="contacts__location-description">Адрес</div>
+												<div class="contacts__location-title">
+													Макеевка, Кировский р-н, ул. Лебедева, д. 1 (Здание ЖД вокзала)
+												</div>
+											</div>
+										</div>
+										<div class="contacts__location-item">
+											<div class="contacts__location-icon">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="24"
+													height="24"
+													viewBox="0 0 24 24"
+													fill="none"
+													stroke="currentColor"
+													stroke-width="2"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													class="lucide-map-pin"
+													aria-hidden="true"
+												>
+													<path
+														d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+													></path>
+													<circle cx="12" cy="10" r="3"></circle>
+												</svg>
+											</div>
+											<div class="contacts__location-info">
+												<div class="contacts__location-description">Адрес</div>
+												<div class="contacts__location-title">
+													г. Макеевка, Центрально-Городской р-н, ул. д. 1-Б (Автовокзал)
+												</div>
+											</div>
+										</div>
+										<div class="contacts__location-item">
+											<div class="contacts__location-icon">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="24"
+													height="24"
+													viewBox="0 0 24 24"
+													fill="none"
+													stroke="currentColor"
+													stroke-width="2"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													class="lucide-map-pin"
+													aria-hidden="true"
+												>
+													<path
+														d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+													></path>
+													<circle cx="12" cy="10" r="3"></circle>
+												</svg>
+											</div>
+											<div class="contacts__location-info">
+												<div class="contacts__location-description">Адрес</div>
+												<div class="contacts__location-title">
+													Макеевка, Червоногвардейский р-н, ул. Кренкеля, д. 14 (МБОУ «Школа № 118»)
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a
+						href="https://www.google.com/maps/dir/?api=1&destination=48.099015,37.960244"
+						class="contacts__travel"
+						target="_blank"
+						rel="noopener"
+					>
+						<div class="contacts__travel-icons">
+							<svg class="lucide-travel" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="1"
+									d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+								></path>
+							</svg>
+						</div>
+						<div class="contacts__travel-text">
+							<div class="contacts__travel-subtitle">Фактический адрес</div>
+							<div class="contacts__travel-title">г. Макеевка, ул. 50-лет образования СССР</div>
+						</div>
+						<div class="contacts__travel-name">
+							<div class="contacts__travel-description">
+								Находимся в самом сердце города для вашего удобства
+							</div>
+							<div class="contacts__travel-button">
+								<span class="contacts__travel-button-text">Построить маршрут</span>
+								<span class="contacts__travel-button-icon">
+									<i class="ri-arrow-right-long-line"></i>
+								</span>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<div class="modal" id="thanks-modal">
+			<div class="modal__overlay"></div>
+			<div class="modal__content">
+				<button class="modal__close" id="modal-close">
+					<i class="ri-close-line"></i>
+				</button>
+
+				<div class="modal__icon">
+					<svg class="checkmark" viewBox="0 0 52 52">
+						<circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+						<path class="checkmark__check" fill="none" d="M14 27l7 7 17-17" />
+					</svg>
+				</div>
+
+				<h3 class="modal__title">Спасибо за заявку!</h3>
+				<p class="modal__text">Мы свяжемся с вами в ближайшее время.</p>
+			</div>
+		</div>
+
+		<div class="popup">
+			<!-- фоновые декорации попапа -->
+			<div class="popup__decor popup__decor--bg-left"></div>
+			<div class="popup__decor popup__decor--bg-right"></div>
+
+			<div class="popup__inner">
+				<div class="popup__header">
+					<div class="popup__heading">
+						<div class="popup__tag">
+							<span class="popup__tag-icon"></span>
+							<span class="popup__tag-text">System online</span>
+						</div>
+					</div>
+					<h3 class="popup__title">
+						Обратный
+						<span>звонок</span>
+					</h3>
+
+					<button class="popup__close button">
+						<i class="ri-close-line popup__close-icon"></i>
+					</button>
+				</div>
+				<p class="popup__text popup__text--line">
+					Введите свои данные, и мы свяжемся с вами в ближайшее время для настройки оборудования.
+				</p>
+				<form class="popup__form">
+					<div class="popup__field">
+						<label class="popup__label" for="name">Имя пользователя</label>
+						<div class="popup__field-group">
+							<input
+								class="popup__input"
+								id="name"
+								type="text"
+								placeholder="Alexey"
+								autocomplete="username"
+								required
+							/>
+
+							<!-- декор поля -->
+							<span class="popup__decor--field-top-left"></span>
+							<span class="popup__decor--field-bottom-right"></span>
+						</div>
+					</div>
+
+					<div class="popup__field">
+						<label class="popup__label" for="tel">Телефон</label>
+						<div class="popup__field-group">
+							<input
+								class="popup__input"
+								id="tel"
+								type="tel"
+								placeholder="+7 (___) ___-__-__"
+								autocomplete="tel"
+								required
+							/>
+
+							<span class="popup__decor--field-top-left"></span>
+							<span class="popup__decor--field-bottom-right"></span>
+						</div>
+					</div>
+
+					<button class="popup__button button" type="submit">Заказать звонок</button>
+				</form>
+				<div class="popup__decor-line"></div>
+				<div class="popup__info">
+					<div class="popup__info-item">
+						<span class="popup__info-icon"><i class="ri-lock-line"></i></span>
+						<span class="popup__info-text">Secure Encrypted</span>
+					</div>
+					<div class="popup__info-id">ID: 8842-XF</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer ">
+			<div class="container">
+				<!-- TOP -->
+				<div class="footer__top">
+					<div class="footer__grid">
+						<!-- BRAND -->
+						<div class="footer__brand">
+							<a href="#" class="footer__logo">
+								<div class="footer__logo-icon"></div>
+
+								<div class="footer__logo-content">
+									<div class="footer__logo-title">
+										Sputnik
+										<span>NT</span>
+									</div>
+									<div class="footer__logo-subtitle">Всегда онлайн</div>
+								</div>
+							</a>
+
+							<div class="footer__description">
+								Провайдер нового поколения. Создаем цифровую экосистему для жизни и бизнеса на базе
+								собственной оптоволоконной магистрали.
+							</div>
+
+							<div class="footer__region">
+								<div class="footer__region-badge">
+									<div class="footer__region-icon"><i class="ri-global-line"></i></div>
+									<div class="footer__region-code">RU</div>
+								</div>
+								<div class="footer__region-name">Donetsk Region</div>
+							</div>
+						</div>
+
+						<!-- NAV -->
+						<div class="footer__nav">
+							<div class="footer__title footer__title--line">
+								<span class="footer__title-text">Сервисы</span>
+								<span class="footer__title-icon"><i class="ri-arrow-down-s-line"></i></span>
+							</div>
+							<nav class="footer__menu">
+								<a href="#" class="footer__link">Скоростной интернет</a>
+								<a href="#" class="footer__link">Цифровое ТВ</a>
+								<a href="#" class="footer__link">Видеонаблюдение</a>
+								<a href="#" class="footer__link">Умный дом</a>
+								<a href="#" class="footer__link">Оборудование</a>
+							</nav>
+						</div>
+
+						<!-- NAV -->
+						<div class="footer__nav">
+							<div class="footer__title footer__title--line">
+								<span class="footer__title-text">Компания</span>
+								<span class="footer__title-icon"><i class="ri-arrow-down-s-line"></i></span>
+							</div>
+							<nav class="footer__menu">
+								<a href="#" class="footer__link">О нас</a>
+								<a href="#" class="footer__link">Лицензия</a>
+								<a href="#" class="footer__link">Инвесторам</a>
+								<a href="#" class="footer__link">Новости</a>
+								<a href="#" class="footer__link">Контакты</a>
+							</nav>
+						</div>
+
+						<!-- CONTACTS -->
+						<div class="footer__contacts">
+							<div class="footer__phone">
+								<a href="tel:+88000000000" class="footer__phone-link">8 800 000-00-00</a>
+								<span class="footer__phone-text">Круглосуточная поддержка</span>
+							</div>
+
+							<button class="footer__button button modal-win">
+								<span class="footer__button-icon"><i class="ri-mail-send-line"></i></span>
+								<span class="footer__button-text">Написать письмо</span>
+								<span class="footer__button-icon icon--arrow">
+									<i class="ri-arrow-right-up-line"></i>
+								</span>
+							</button>
+
+							<div class="footer__schedule">
+								<span class="footer__schedule-icon"><i class="ri-time-line"></i></span>
+								<span class="footer__schedule-text">Офис: Пн–Пт 09:00 – 21:00</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- BOTTOM -->
+				<div class="footer__bottom">
+					<div class="footer__bottom-inner">
+						<div class="footer__copyright">© 2026 Telecom Future. All rights reserved.</div>
+
+						<div class="footer__legal">
+							<a href="#" class="footer__legal-link">Privacy Policy</a>
+							<a href="#" class="footer__legal-link">Terms of Service</a>
+							<a href="#" class="footer__legal-link">SLA Agreement</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="popup__overlay"></div>
+
+		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+		<script>
+			ymaps.ready(init)
+
+			function init() {
+				var myMap = new ymaps.Map('map', {
+					center: [48.099015, 37.960244],
+					zoom: 15,
+					controls: ['zoomControl', 'fullscreenControl'], // Добавляем элементы управления
+				})
+
+				var points = [
+					{ coords: [48.099015, 37.960244], icon: 'images/icons/map-office.svg' }, // офис
+					{ coords: [48.100856, 37.963073], icon: 'images/icons/map-branch.svg' }, // филиал
+					{ coords: [48.100736, 37.95117], icon: 'images/icons/map-branch.svg' }, // филиал
+					{ coords: [48.094975, 37.95762], icon: 'images/icons/map-office.svg' }, // офис
+				]
+
+				points.forEach(function (point) {
+					var placemark = new ymaps.Placemark(
+						point.coords,
+						{}, // можно добавить балун или хинт
+						{
+							iconLayout: 'default#image',
+							iconImageHref: point.icon,
+							iconImageSize: [30, 42],
+							iconImageOffset: [-15, -42],
+						},
+					)
+					myMap.geoObjects.add(placemark)
+				})
+
+				// Автоцентрирование с отступом (padding)
+				myMap.setBounds(myMap.geoObjects.getBounds(), {
+					checkZoomRange: true,
+					zoomMargin: 40, // Отступ от краев в пикселях
+				})
+			}
+		</script>
+		<script src="https://unpkg.com/imask"></script>
+		<link
+			href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+			rel="stylesheet"
+		/>
+	</body>
+</html>

@@ -1,0 +1,1349 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sputnik Интернет и цифровое ТВ</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+		<script src="js/main.js" defer></script>
+		<script src="js/canvas.js" defer></script>
+		<!-- defer атрибут что будет загружаться в конце -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header class="header">
+			<!-- <canvas
+				id="wavesCanvas"
+				style="
+					position: absolute;
+					top: -410px;
+					left: 296px;
+					width: 100%;
+					height: 100%;
+					pointer-events: none;
+					z-index: 0;
+				"
+			></canvas> -->
+			<div class="container">
+				<div class="header__inner">
+					<a href="index.html" class="logo logo-sputnik">
+						<div class="orbits">
+							<div class="orbit orbit-1"></div>
+							<div class="orbit orbit-2"></div>
+							<div class="orbit orbit-3"></div>
+						</div>
+
+						<div class="logo__title">
+							Sputnik
+							<span class="logo__accent">nt</span>
+						</div>
+						<div class="logo__subtitle">Телекоммуникации</div>
+					</a>
+
+					<button class="button button__burger">
+						<span class="burger__line"></span>
+						<span class="burger__line"></span>
+						<span class="burger__line"></span>
+					</button>
+
+					<nav class="menu">
+						<ul class="menu__items">
+							<button class="button__close button">
+								<i class="ri-close-large-fill"></i>
+							</button>
+
+							<li class="menu__item">
+								<a href="index.html" class="menu__link menu--active">Главная</a>
+							</li>
+							<li class="menu__item">
+								<a href="services.html" class="menu__link">Услуги</a>
+							</li>
+							<li class="menu__item">
+								<a href="tariffs.html" class="menu__link">Тарифы</a>
+							</li>
+							<li class="menu__item">
+								<a href="stock.html" class="menu__link">Акции</a>
+							</li>
+							<li class="menu__item">
+								<a href="news.html" class="menu__link">Новости</a>
+							</li>
+							<li class="menu__item">
+								<a href="company.html" class="menu__link">О нас</a>
+							</li>
+							<li class="menu__item">
+								<a href="contacts.html" class="menu__link">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+
+					<div class="header__button">
+						<button class="neon modal-win">Get Consultation</button>
+					</div>
+				</div>
+			</div>
+			<div class="overlay"></div>
+		</header>
+
+		<section class="banner">
+			<!-- Фоновый canvas — элемент баннера -->
+			<canvas class="banner__grid" id="gridCanvas"></canvas>
+
+			<div class="swiper myBanner">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="container-slider">
+							<div class="banner__slide">
+								<div class="banner__content">
+									<div class="banner__tag">
+										<div class="banner__tag-name">sys.ver.2026</div>
+										<div class="banner__tag-line"></div>
+										<div class="banner__tag-title">NEURAL LINK ESTABLISHED</div>
+									</div>
+
+									<div class="banner__info">
+										<div class="banner__info-title">
+											Медиа
+											<br />
+											матрица
+										</div>
+
+										<div class="banner__info-text">
+											Прямое подключение к магистрали данных. Синхронизация на скорости света.
+										</div>
+
+										<div class="banner__status">
+											<div class="banner__status-item">
+												<div class="banner__status-title">BANDWIDTH</div>
+												<div class="banner__status-value">10.0 GBPS</div>
+											</div>
+											<div class="banner__status-item">
+												<div class="banner__status-title">PING</div>
+												<div class="banner__status-value">0.8 MS</div>
+											</div>
+											<div class="banner__status-item">
+												<div class="banner__status-title">ENCRYPTION</div>
+												<div class="banner__status-value">AES-256</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="banner__img banner__img-line">
+									<img src="images/img/slider_banner/slide-1.webp" alt="" class="banner__images" />
+									<div class="banner__img-tag"><span>Mode_active</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="container-slider">
+							<div class="banner__slide">
+								<div class="banner__content">
+									<div class="banner__tag">
+										<div class="banner__tag-name">sys.ver.2026</div>
+										<div class="banner__tag-line"></div>
+										<div class="banner__tag-title">OPTICAL ARRAY ONLINE</div>
+									</div>
+
+									<div class="banner__info">
+										<div class="banner__info-title">
+											ВИЗУАЛЬНЫЙ
+											<br />
+											РЕЗОНАНС
+										</div>
+
+										<div class="banner__info-text">
+											Иммерсивный контент 8K. Глубокое погружение в цифровую реальность.
+										</div>
+
+										<div class="banner__status">
+											<div class="banner__status-item">
+												<div class="banner__status-title">RESOLUTION</div>
+												<div class="banner__status-value">7680x4320</div>
+											</div>
+											<div class="banner__status-item">
+												<div class="banner__status-title">HDR</div>
+												<div class="banner__status-value">TRUE_BLACK</div>
+											</div>
+											<div class="banner__status-item">
+												<div class="banner__status-title">CHANNELS</div>
+												<div class="banner__status-value">UNLIMITED</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="banner__img banner__img-square">
+									<img src="images/img/slider_banner/slide-3.webp" alt="" class="banner__images" />
+									<!-- <div class="banner__img-tag"><span>Mode_active</span></div> -->
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="container-slider">
+							<div class="banner__slide">
+								<div class="banner__content">
+									<div class="banner__tag">
+										<div class="banner__tag-name">sec.prot.2026</div>
+										<div class="banner__tag-line"></div>
+										<div class="banner__tag-title">FIREWALL ACTIVE</div>
+									</div>
+
+									<div class="banner__info">
+										<div class="banner__info-title">
+											Квантовый
+											<br />
+											щит
+										</div>
+
+										<div class="banner__info-text">
+											Многоуровневая система защиты данных. Полная анонимность в сети и блокировка
+											внешних угроз.
+										</div>
+
+										<div class="banner__status">
+											<div class="banner__status-item">
+												<div class="banner__status-title">SECURITY</div>
+												<div class="banner__status-value">ULTRA</div>
+											</div>
+											<div class="banner__status-item">
+												<div class="banner__status-title">THREATS</div>
+												<div class="banner__status-value">0 DETECTED</div>
+											</div>
+											<div class="banner__status-item">
+												<div class="banner__status-title">IDENTITY</div>
+												<div class="banner__status-value">HIDDEN</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="banner__img banner__img-line">
+									<img
+										src="images/img/slider_banner/slide-6.webp"
+										alt="Security Shield"
+										class="banner__images"
+									/>
+									<div class="banner__img-tag"><span>Secure_link</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- <div class="swiper-slide">
+						<div class="container-slider">
+							<div class="banner__slide">
+								<div class="banner__content">
+									<div class="banner__tag">
+										<div class="banner__tag-name">ai.core.v3</div>
+										<div class="banner__tag-line"></div>
+										<div class="banner__tag-title">SYNAPTIC COMPUTING</div>
+									</div>
+
+									<div class="banner__info">
+										<div class="banner__info-title">
+											Ядро
+											<br />
+											разума
+										</div>
+
+										<div class="banner__info-text">
+											Автоматизация процессов на базе нейронных сетей третьего поколения. Решения
+											принимаются мгновенно.
+										</div>
+
+										<div class="banner__status">
+											<div class="banner__status-item">
+												<div class="banner__status-title">LOAD</div>
+												<div class="banner__status-value">32%</div>
+											</div>
+											<div class="banner__status-item">
+												<div class="banner__status-title">NODES</div>
+												<div class="banner__status-value">12.4k</div>
+											</div>
+											<div class="banner__status-item">
+												<div class="banner__status-title">RESPONSE</div>
+												<div class="banner__status-value">INSTANT</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="banner__img banner__img-line">
+									<img
+										src="images/img/slider_banner/slide-4.webp"
+										alt="AI Core"
+										class="banner__images"
+									/>
+									<div class="banner__img-tag"><span>AI_processing</span></div>
+								</div>
+							</div>
+						</div>
+					</div> -->
+				</div>
+				<div class="banner__navigation">
+					<div class="banner__button-slid banner-button-next">
+						<i class="ri-arrow-up-s-line"></i>
+						<div class="banner__button-dec banner__button-dec--rt"></div>
+						<div class="banner__button-dec banner__button-dec--rb"></div>
+						<div class="banner__button-dec banner__button-dec--lt"></div>
+						<div class="banner__button-dec banner__button-dec--lb"></div>
+					</div>
+					<div class="banner__button-back banner__button-slid banner-button-prev">
+						<i class="ri-arrow-down-s-line"></i>
+						<div class="banner__button-dec-back">back</div>
+					</div>
+				</div>
+				<div class="power-indicator">
+					<div class="power-indicator-name">power level</div>
+					<div class="power-indicator__bar" id="powerBar"></div>
+					<div class="power-indicator-status">
+						<div class="power-indicator-item">
+							<i class="ri-shut-down-line"></i>
+							<span class="power-indicator-stat">33%</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="services">
+			<div class="container">
+				<div class="services__header">
+					<div class="services__label services--line">Enterprise Solutions</div>
+					<h2 class="services__title">
+						Технологические
+						<span>решения</span>
+					</h2>
+					<p class="services__subtitle">
+						Создаём надёжные системы связи и цифровые сервисы с масштабируемость, стабильной работой
+						и простой интеграцией в корпоративную инфраструктуру.Мы обеспечиваем стабильную работу
+						сервисов даже в условиях высокой нагрузки и критически важной инфраструктуры.
+					</p>
+				</div>
+				<div class="services__group">
+					<ul class="services__items">
+						<li class="services__item">
+							<div class="services__arrow"><i class="ri-arrow-right-up-line"></i></div>
+							<div class="services__item-title">[ 01 / RT-DATA ]</div>
+							<div class="services__icon-wrapper">
+								<div class="services__icon">
+									<svg
+										class="w-8 h-8"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="1.5"
+									>
+										<path
+											d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										></path>
+									</svg>
+									<div class="services__box-sh"></div>
+								</div>
+							</div>
+							<div class="services__item-description">Спутниковая телеметрия</div>
+							<div class="services__item-text">
+								Мониторинг и сбор данных с высокой пропускной способностью для орбитальных объектов
+								LEO и GEO.
+							</div>
+							<div class="services__item-footer">
+								<div class="services__line"></div>
+								<button class="button services__button button--arrow-left">Specs & Data</button>
+							</div>
+						</li>
+						<li class="services__item">
+							<div class="services__arrow"><i class="ri-arrow-right-up-line"></i></div>
+							<div class="services__item-title">[ 02 / HARDWARE ]</div>
+							<div class="services__icon-wrapper">
+								<div class="services__icon">
+									<svg
+										class="w-8 h-8"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="1.5"
+									>
+										<path
+											d="M20 20L4 4m0 16L20 4M12 2v20M2 12h20"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										></path>
+										<circle cx="12" cy="12" r="3"></circle>
+									</svg>
+									<div class="services__box-sh"></div>
+								</div>
+							</div>
+							<div class="services__item-description">Наземная инфраструктура</div>
+							<div class="services__item-text">
+								Проектирование и внедрение надежных наземных станций с автоматизированными системами
+								слежения.
+							</div>
+							<div class="services__item-footer">
+								<div class="services__line"></div>
+								<button class="button services__button button--arrow-left">Specs & Data</button>
+							</div>
+						</li>
+						<li class="services__item">
+							<div class="services__arrow"><i class="ri-arrow-right-up-line"></i></div>
+							<div class="services__item-title">[ 03 / SOFTWARE ]</div>
+							<div class="services__icon-wrapper">
+								<div class="services__icon">
+									<svg
+										class="w-8 h-8"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="1.5"
+									>
+										<path
+											d="M22 12h-4l-3 9L9 3l-3 9H2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										></path>
+									</svg>
+									<div class="services__box-sh"></div>
+								</div>
+							</div>
+							<div class="services__item-description">Обработка сигналов</div>
+							<div class="services__item-text">
+								Усовершенствованные алгоритмы DSP для связи с малой задержкой в ​​средах с высоким
+								уровнем помех.
+							</div>
+							<div class="services__item-footer">
+								<div class="services__line"></div>
+								<button class="button services__button button--arrow-left">Specs & Data</button>
+							</div>
+						</li>
+						<li class="services__item">
+							<div class="services__arrow"><i class="ri-arrow-right-up-line"></i></div>
+							<div class="services__item-title">[ 04 / SECURITY ]</div>
+							<div class="services__icon-wrapper">
+								<div class="services__icon">
+									<svg
+										class="w-8 h-8"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="1.5"
+									>
+										<rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+										<path d="M7 11V7a5 5 0 0110 0v4"></path>
+									</svg>
+									<div class="services__box-sh"></div>
+								</div>
+							</div>
+							<div class="services__item-description">Надёжный канал передачи данных</div>
+							<div class="services__item-text">
+								Шифрование высшего уровня для критически важных процессов управления и контроля.
+							</div>
+							<div class="services__item-footer">
+								<div class="services__line"></div>
+								<button class="button services__button button--arrow-left">Specs & Data</button>
+							</div>
+						</li>
+						<li class="services__item">
+							<div class="services__arrow"><i class="ri-arrow-right-up-line"></i></div>
+							<div class="services__item-title">[ 05 / ANALYTICS ]</div>
+							<div class="services__icon-wrapper">
+								<div class="services__icon">
+									<svg
+										class="w-8 h-8"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="1.5"
+									>
+										<path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+										<path d="M3.6 9h16.8M3.6 15h16.8"></path>
+										<path d="M12 3a12 12 0 000 18M12 3a12 12 0 010 18"></path>
+									</svg>
+									<div class="services__box-sh"></div>
+								</div>
+							</div>
+							<div class="services__item-description">Орбитальная аналитика</div>
+							<div class="services__item-text">
+								Прогнозирование состояния сети и устройств, планирование жизненного цикла и
+								предотвращение перегрузок.
+							</div>
+							<div class="services__item-footer">
+								<div class="services__line"></div>
+								<button class="button services__button button--arrow-left">Specs & Data</button>
+							</div>
+						</li>
+						<li class="services__item">
+							<div class="services__arrow"><i class="ri-arrow-right-up-line"></i></div>
+							<div class="services__item-title">[ 06 / PRECISION ]</div>
+							<div class="services__icon-wrapper">
+								<div class="services__icon">
+									<svg
+										class="w-8 h-8"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="1.5"
+									>
+										<circle cx="12" cy="12" r="10"></circle>
+										<path d="M12 6v6l4 2"></path>
+									</svg>
+									<div class="services__box-sh"></div>
+								</div>
+							</div>
+							<div class="services__item-description">Точное время</div>
+							<div class="services__item-text">
+								Время с высокой точностью для оптимизации сетевых процессов
+							</div>
+							<div class="services__item-footer">
+								<div class="services__line"></div>
+								<button class="button services__button button--arrow-left">Specs & Data</button>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section class="hero">
+			<div class="container">
+				<div class="hero__wrapper">
+					<div class="hero__content">
+						<div class="hero__tag">
+							<span class="hero-tag-dor"></span>
+							<span class="hero-tag-text">Next_Gen_Technology</span>
+						</div>
+						<div class="hero__title">
+							Покоряйте новые горизонты с нами
+							<span class="hero__higlight animate-text-shine">подключайтесь к будущему</span>
+						</div>
+						<div class="hero__description">
+							Премиальные цифровые сервисы на базе собственной магистральной сети. Максимальная
+							скорость и безупречная стабильность.
+						</div>
+						<div class="hero__cards">
+							<div class="hero__card">
+								<div class="hero__icon">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="lucide lucide-cpu"
+										aria-hidden="true"
+									>
+										<path d="M12 20v2"></path>
+										<path d="M12 2v2"></path>
+										<path d="M17 20v2"></path>
+										<path d="M17 2v2"></path>
+										<path d="M2 12h2"></path>
+										<path d="M2 17h2"></path>
+										<path d="M2 7h2"></path>
+										<path d="M20 12h2"></path>
+										<path d="M20 17h2"></path>
+										<path d="M20 7h2"></path>
+										<path d="M7 20v2"></path>
+										<path d="M7 2v2"></path>
+										<rect x="4" y="4" width="16" height="16" rx="2"></rect>
+										<rect x="8" y="8" width="8" height="8" rx="1"></rect>
+									</svg>
+								</div>
+								<div class="hero__card-text">
+									<div class="hero__card-title">Оборудование</div>
+									<div class="hero__card-subtitle">и комплектующие к ПК</div>
+								</div>
+							</div>
+							<div class="hero__card">
+								<div class="hero__icon">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="lucide lucide-megaphone"
+										aria-hidden="true"
+									>
+										<path
+											d="M11 6a13 13 0 0 0 8.4-2.8A1 1 0 0 1 21 4v12a1 1 0 0 1-1.6.8A13 13 0 0 0 11 14H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"
+										></path>
+										<path d="M6 14a12 12 0 0 0 2.4 7.2 2 2 0 0 0 3.2-2.4A8 8 0 0 1 10 14"></path>
+										<path d="M8 6v8"></path>
+									</svg>
+								</div>
+								<div class="hero__card-text">
+									<div class="hero__card-title">Ваша реклама</div>
+									<div class="hero__card-subtitle">на наших инфо-ресурсах</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="hero__visual">
+						<a href="internet.html" class="hero__module">
+							<div class="hero__module-name">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									class="lucide lucide-wifi"
+									aria-hidden="true"
+								>
+									<path d="M12 20h.01"></path>
+									<path d="M2 8.82a15 15 0 0 1 20 0"></path>
+									<path d="M5 12.859a10 10 0 0 1 14 0"></path>
+									<path d="M8.5 16.429a5 5 0 0 1 7 0"></path>
+								</svg>
+								<span class="hero__module-name-text">System_01</span>
+							</div>
+							<div class="hero__module-title">Интернет</div>
+							<div class="hero__module-subtitle">High Speed Connection</div>
+							<div class="hero__module-img">
+								<img src="images/img/modules/net-2.webp" alt="" class="hero__module-images" />
+							</div>
+							<div class="hero__visual-btn">
+								<div class="hero__visual-line1"></div>
+								<div class="hero__visual-line2"></div>
+							</div>
+						</a>
+						<a href="digital-tv.html" class="hero__module">
+							<div class="hero__module-name">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="18"
+									height="18"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									class="lucide lucide-tv"
+									aria-hidden="true"
+								>
+									<path d="m17 2-5 5-5-5"></path>
+									<rect width="20" height="15" x="2" y="7" rx="2"></rect>
+								</svg>
+								<span class="hero__module-name-text">System_02</span>
+							</div>
+							<div class="hero__module-title">ЦИФРОВОЕ ТВ</div>
+							<div class="hero__module-subtitle">HPremium Content Delivery</div>
+							<div class="hero__module-img">
+								<img src="images/img/modules/tv-3.webp" alt="" class="hero__module-images" />
+							</div>
+							<div class="hero__visual-name">
+								<div class="hero__visual-title">4K_HDR</div>
+							</div>
+						</a>
+						<a href="surveillance.html" class="hero__module">
+							<div class="hero__module-name">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="18"
+									height="18"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									class="lucide lucide-video"
+									aria-hidden="true"
+								>
+									<path
+										d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"
+									></path>
+									<rect x="2" y="6" width="14" height="12" rx="2"></rect>
+								</svg>
+								<span class="hero__module-name-text">System_03</span>
+							</div>
+							<div class="hero__module-title">Контроль</div>
+							<div class="hero__module-subtitle">AI Surveillance System</div>
+							<div class="hero__module-img">
+								<img src="images/img/modules/cam-1.webp" alt="" class="hero__module-images" />
+							</div>
+							<div class="hero__visual-name">
+								<div class="hero__visual-rec">
+									<span class="hero__visual-rec-circle"></span>
+									<span class="hero__visual-rec-text">rec</span>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- БЛОК: Архитектура сети -->
+		<section class="network-arch">
+			<div class="container">
+				<div class="network-arch__header">
+					<h2 class="network-arch__title">
+						Архитектура
+						<span>Сети</span>
+					</h2>
+					<div class="network-arch__title-line"></div>
+				</div>
+
+				<div class="network-arch__container">
+					<!-- ЭЛЕМЕНТ: Линия (Магистраль) -->
+					<div class="network-arch__line">
+						<!-- Заполняющаяся часть (высота меняется через JS) -->
+						<div class="network-arch__line-fill"></div>
+						<!-- Стартовая точка -->
+						<div class="network-arch__start-dot"></div>
+					</div>
+
+					<!-- ЭТАП 1 (Нечетный - слева) -->
+					<div class="network-arch__step network-arch__step--odd" data-threshold="0.1">
+						<div class="network-arch__content">
+							<span class="network-arch__subtitle">Уровень 1</span>
+							<h3 class="network-arch__name">Магистральная сеть</h3>
+							<p class="network-arch__desc">
+								Глобальная транспортная инфраструктура. Оптоволоконные линии сверхвысокой пропускной
+								способности.
+							</p>
+						</div>
+
+						<div class="network-arch__node">
+							<div class="network-arch__connector network-arch__connector--left">
+								<div class="network-arch__connector-end"></div>
+							</div>
+							<div class="network-arch__dot"></div>
+							<div class="network-arch__connector network-arch__connector--right">
+								<div class="network-arch__connector-end"></div>
+							</div>
+						</div>
+
+						<div class="network-arch__visual">
+							<div class="network-arch__image-wrapper">
+								<img
+									src="images/img/network-section/mag.webp"
+									alt="Магистраль"
+									class="network-arch__img"
+								/>
+							</div>
+						</div>
+					</div>
+
+					<!-- ЭТАП 2 (Четный - справа) -->
+					<div class="network-arch__step network-arch__step--even" data-threshold="0.35">
+						<div class="network-arch__content">
+							<span class="network-arch__subtitle">Уровень 2</span>
+							<h3 class="network-arch__name">Дата-центр</h3>
+							<p class="network-arch__desc">
+								Централизованная обработка трафика. Кластеры серверов с многоуровневым
+								резервированием.
+							</p>
+						</div>
+
+						<div class="network-arch__node">
+							<div class="network-arch__connector network-arch__connector--left">
+								<div class="network-arch__connector-end"></div>
+							</div>
+							<div class="network-arch__dot"></div>
+							<div class="network-arch__connector network-arch__connector--right">
+								<div class="network-arch__connector-end"></div>
+							</div>
+						</div>
+
+						<div class="network-arch__visual">
+							<div class="network-arch__image-wrapper">
+								<img
+									src="images/img/network-section/data.webp"
+									alt="Дата-центр"
+									class="network-arch__img"
+								/>
+							</div>
+						</div>
+					</div>
+
+					<!-- ЭТАП 3 (Нечетный - слева) -->
+					<div class="network-arch__step network-arch__step--odd" data-threshold="0.6">
+						<div class="network-arch__content">
+							<span class="network-arch__subtitle">Уровень 3</span>
+							<h3 class="network-arch__name">Узел доступа</h3>
+							<p class="network-arch__desc">
+								Локальный уровень распределения. Высокопроизводительные коммутаторы агрегации.
+							</p>
+						</div>
+
+						<div class="network-arch__node">
+							<div class="network-arch__connector network-arch__connector--left">
+								<div class="network-arch__connector-end"></div>
+							</div>
+							<div class="network-arch__dot"></div>
+							<div class="network-arch__connector network-arch__connector--right">
+								<div class="network-arch__connector-end"></div>
+							</div>
+						</div>
+
+						<div class="network-arch__visual">
+							<div class="network-arch__image-wrapper">
+								<img
+									src="images/img/network-section/uzel.webp"
+									alt="Узел доступа"
+									class="network-arch__img"
+								/>
+							</div>
+						</div>
+					</div>
+
+					<!-- ЭТАП 4 (Четный - справа) -->
+					<div class="network-arch__step network-arch__step--even" data-threshold="0.85">
+						<div class="network-arch__content">
+							<span class="network-arch__subtitle">Уровень 4</span>
+							<h3 class="network-arch__name">Абонент</h3>
+							<p class="network-arch__desc">
+								Конечная точка экосистемы. Премиальное абонентское оборудование и бесшовный Wi-Fi.
+							</p>
+						</div>
+
+						<div class="network-arch__node">
+							<div class="network-arch__connector network-arch__connector--left">
+								<div class="network-arch__connector-end"></div>
+							</div>
+							<div class="network-arch__dot"></div>
+							<div class="network-arch__connector network-arch__connector--right">
+								<div class="network-arch__connector-end"></div>
+							</div>
+						</div>
+
+						<div class="network-arch__visual">
+							<div class="network-arch__image-wrapper">
+								<img
+									src="images/img/network-section/user.webp"
+									alt="Абонент"
+									class="network-arch__img"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="network-box">
+					<div class="network-settings">
+						<div class="network-settings__item">
+							<div class="network-settings__title">Панель Мониторинга</div>
+							<div class="network-settings__monitoring">
+								User ID: 894-221 • Status:
+								<span class="network-settings__monitoring-online">Online</span>
+							</div>
+						</div>
+						<div class="network-settings__item network--system">
+							<span class="network-settings__pulse"></span>
+							<span class="network-settings__stable">System Stable</span>
+						</div>
+					</div>
+
+					<div class="network-group">
+						<div class="network-items">
+							<div class="network-item network-item--inter">
+								<div class="network-item__icons">
+									<div class="network-item__icon">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="24"
+											height="24"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											class="network__icon-smoll"
+											aria-hidden="true"
+										>
+											<path
+												d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"
+											></path>
+										</svg>
+									</div>
+									<span class="network_item__icons-svg icon--purple">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="24"
+											height="24"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											class="network-icon network-activity"
+											aria-hidden="true"
+										>
+											<path
+												d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"
+											></path>
+										</svg>
+									</span>
+								</div>
+								<div class="network-item__title">950 Mbit/s</div>
+								<div class="network-item__subtitle">Интернет</div>
+								<div class="network-item__line line--inter"></div>
+								<div class="network-item__informations">Ping: 2ms • Jitter: 0.1ms</div>
+							</div>
+							<div class="network-item network-item--tv">
+								<div class="network-item__icons">
+									<div class="network-item__icon">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="24"
+											height="24"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											class="network__icon-smoll"
+											aria-hidden="true"
+										>
+											<path
+												d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"
+											></path>
+										</svg>
+									</div>
+									<span class="network_item__icons-svg icon--yelow">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="24"
+											height="24"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											class="network-icon network-activity"
+											aria-hidden="true"
+										>
+											<path
+												d="M9 9.003a1 1 0 0 1 1.517-.859l4.997 2.997a1 1 0 0 1 0 1.718l-4.997 2.997A1 1 0 0 1 9 14.996z"
+											></path>
+											<circle cx="12" cy="12" r="10"></circle>
+										</svg>
+									</span>
+								</div>
+
+								<div class="network-item__title">240 Каналов</div>
+								<div class="network-item__subtitle">Интерактивное ТВ</div>
+								<div class="network-item__line line--tv"></div>
+								<div class="network-item__informations">4K HDR • Multi-room</div>
+							</div>
+							<div class="network-item network-item--prot">
+								<div class="network-item__icons">
+									<div class="network-item__icon">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="24"
+											height="24"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											class="network__icon-smoll"
+											aria-hidden="true"
+										>
+											<path
+												d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"
+											></path>
+										</svg>
+									</div>
+									<span class="network_item__icons-svg icon--green">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="24"
+											height="24"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											class="network-icon network-activity"
+											aria-hidden="true"
+										>
+											<path
+												d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+											></path>
+											<path d="m9 12 2 2 4-4"></path>
+										</svg>
+									</span>
+								</div>
+								<div class="network-item__title">Защищено</div>
+								<div class="network-item__subtitle">Безопасность</div>
+								<div class="network-item__line line--prot"></div>
+								<div class="network-item__informations">DDoS Guard • Firewall Active</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="contacts">
+			<div class="contacts__bg" aria-hidden="true">
+				<div class="contacts__bg-gradient"></div>
+				<div class="contacts__bg-grid"></div>
+				<div class="contacts__bg-blob contacts__bg-blob--top"></div>
+				<div class="contacts__bg-blob contacts__bg-blob--bottom"></div>
+			</div>
+
+			<div class="container contacts__container">
+				<div class="contacts__inner">
+					<div class="contacts__header">
+						<span class="contacts__decor-circle"></span>
+						<span class="contacts__decor-title">Contact Support</span>
+					</div>
+
+					<div class="contacts__wrapper">
+						<div class="contacts__content">
+							<h2 class="contacts__title">
+								Готовы к
+								<span class="contacts__title-accent animate-text-shine">новым скоростям?</span>
+							</h2>
+
+							<p class="contacts__text">
+								Оставьте заявку на подключение. Наши специалисты свяжутся с вами для настройки
+								идеального тарифа.
+							</p>
+
+							<div class="contacts__features">
+								<div class="contacts__feature">
+									<span class="contacts__feature-icon"><i class="ri-flashlight-fill"></i></span>
+									<span class="contacts__feature-text">Быстрое подключение</span>
+								</div>
+
+								<div class="contacts__feature">
+									<span class="contacts__feature-icon"><i class="ri-check-line"></i></span>
+									<span class="contacts__feature-text">Гарантия качества</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="contacts__form">
+							<form class="contacts__form-inner">
+								<div class="contacts__field">
+									<input
+										type="text"
+										class="contacts__input"
+										id="username"
+										autocomplete="name"
+										required
+									/>
+									<label for="username" class="contacts__label">Имя</label>
+								</div>
+
+								<div class="contacts__field">
+									<input
+										type="tel"
+										class="contacts__input"
+										id="phone"
+										inputmode="numeric"
+										autocomplete="tel"
+										required
+									/>
+									<label for="phone" class="contacts__label">Телефон</label>
+								</div>
+
+								<div class="contacts__field contacts__checkbox--custom">
+									<input type="checkbox" id="check-1" required />
+									<label for="check-1" class="contacts__custom">
+										<i class="ri-check-fill"></i>
+									</label>
+									<label for="check-1" class="contacts__policy-text">
+										Даю согласие на
+										<a href="#" class="contacts__policy-link">обработку персональных данных</a>
+									</label>
+								</div>
+								<button class="contacts__button button" type="submit">
+									<span class="contacts__button-text">Активировать</span>
+									<span class="contacts__button-icon"><i class="ri-arrow-right-line"></i></span>
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="modal" id="thanks-modal">
+			<div class="modal__overlay"></div>
+			<div class="modal__content">
+				<button class="modal__close" id="modal-close">
+					<i class="ri-close-line"></i>
+				</button>
+
+				<div class="modal__icon">
+					<svg class="checkmark" viewBox="0 0 52 52">
+						<circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+						<path class="checkmark__check" fill="none" d="M14 27l7 7 17-17" />
+					</svg>
+				</div>
+
+				<h3 class="modal__title">Спасибо за заявку!</h3>
+				<p class="modal__text">Мы свяжемся с вами в ближайшее время.</p>
+			</div>
+		</div>
+
+		<div class="popup">
+			<!-- фоновые декорации попапа -->
+			<div class="popup__decor popup__decor--bg-left"></div>
+			<div class="popup__decor popup__decor--bg-right"></div>
+
+			<div class="popup__inner">
+				<div class="popup__header">
+					<div class="popup__heading">
+						<div class="popup__tag">
+							<span class="popup__tag-icon"></span>
+							<span class="popup__tag-text">System online</span>
+						</div>
+					</div>
+					<h3 class="popup__title">
+						Обратный
+						<span>звонок</span>
+					</h3>
+
+					<button class="popup__close button">
+						<i class="ri-close-line popup__close-icon"></i>
+					</button>
+				</div>
+				<p class="popup__text popup__text--line">
+					Введите свои данные, и мы свяжемся с вами в ближайшее время для настройки оборудования.
+				</p>
+				<form class="popup__form">
+					<div class="popup__field">
+						<label class="popup__label" for="name">Имя пользователя</label>
+						<div class="popup__field-group">
+							<input
+								class="popup__input"
+								id="name"
+								type="text"
+								placeholder="Alexey"
+								autocomplete="username"
+								required
+							/>
+
+							<!-- декор поля -->
+							<span class="popup__decor--field-top-left"></span>
+							<span class="popup__decor--field-bottom-right"></span>
+						</div>
+					</div>
+
+					<div class="popup__field">
+						<label class="popup__label" for="tel">Телефон</label>
+						<div class="popup__field-group">
+							<input
+								class="popup__input"
+								id="tel"
+								type="tel"
+								placeholder="+7 (___) ___-__-__"
+								autocomplete="tel"
+								required
+							/>
+
+							<span class="popup__decor--field-top-left"></span>
+							<span class="popup__decor--field-bottom-right"></span>
+						</div>
+					</div>
+
+					<button class="popup__button button" type="submit">Заказать звонок</button>
+				</form>
+				<div class="popup__decor-line"></div>
+				<div class="popup__info">
+					<div class="popup__info-item">
+						<span class="popup__info-icon"><i class="ri-lock-line"></i></span>
+						<span class="popup__info-text">Secure Encrypted</span>
+					</div>
+					<div class="popup__info-id">ID: 8842-XF</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="container">
+				<!-- TOP -->
+				<div class="footer__top">
+					<div class="footer__grid">
+						<!-- BRAND -->
+						<div class="footer__brand">
+							<a href="#" class="footer__logo">
+								<div class="footer__logo-icon"></div>
+
+								<div class="footer__logo-content">
+									<div class="footer__logo-title">
+										Sputnik
+										<span>NT</span>
+									</div>
+									<div class="footer__logo-subtitle">Всегда онлайн</div>
+								</div>
+							</a>
+
+							<div class="footer__description">
+								Провайдер нового поколения. Создаем цифровую экосистему для жизни и бизнеса на базе
+								собственной оптоволоконной магистрали.
+							</div>
+
+							<div class="footer__region">
+								<div class="footer__region-badge">
+									<div class="footer__region-icon"><i class="ri-global-line"></i></div>
+									<div class="footer__region-code">RU</div>
+								</div>
+								<div class="footer__region-name">Donetsk Region</div>
+							</div>
+						</div>
+
+						<!-- NAV -->
+						<div class="footer__nav">
+							<div class="footer__title footer__title--line">
+								<span class="footer__title-text">Сервисы</span>
+								<span class="footer__title-icon"><i class="ri-arrow-down-s-line"></i></span>
+							</div>
+							<nav class="footer__menu">
+								<a href="#" class="footer__link">Скоростной интернет</a>
+								<a href="#" class="footer__link">Цифровое ТВ</a>
+								<a href="#" class="footer__link">Видеонаблюдение</a>
+								<a href="#" class="footer__link">Умный дом</a>
+								<a href="#" class="footer__link">Оборудование</a>
+							</nav>
+						</div>
+
+						<!-- NAV -->
+						<div class="footer__nav">
+							<div class="footer__title footer__title--line">
+								<span class="footer__title-text">Компания</span>
+								<span class="footer__title-icon"><i class="ri-arrow-down-s-line"></i></span>
+							</div>
+							<nav class="footer__menu">
+								<a href="#" class="footer__link">О нас</a>
+								<a href="#" class="footer__link">Лицензия</a>
+								<a href="#" class="footer__link">Инвесторам</a>
+								<a href="#" class="footer__link">Новости</a>
+								<a href="#" class="footer__link">Контакты</a>
+							</nav>
+						</div>
+
+						<!-- CONTACTS -->
+						<div class="footer__contacts">
+							<div class="footer__phone">
+								<a href="tel:+88000000000" class="footer__phone-link">8 800 000-00-00</a>
+								<span class="footer__phone-text">Круглосуточная поддержка</span>
+							</div>
+
+							<button class="footer__button button modal-win">
+								<span class="footer__button-icon"><i class="ri-mail-send-line"></i></span>
+								<span class="footer__button-text">Написать письмо</span>
+								<span class="footer__button-icon icon--arrow">
+									<i class="ri-arrow-right-up-line"></i>
+								</span>
+							</button>
+
+							<div class="footer__schedule">
+								<span class="footer__schedule-icon"><i class="ri-time-line"></i></span>
+								<span class="footer__schedule-text">Офис: Пн–Пт 09:00 – 21:00</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- BOTTOM -->
+				<div class="footer__bottom">
+					<div class="footer__bottom-inner">
+						<div class="footer__copyright">© 2026 Telecom Future. All rights reserved.</div>
+
+						<div class="footer__legal">
+							<a href="#" class="footer__legal-link">Privacy Policy</a>
+							<a href="#" class="footer__legal-link">Terms of Service</a>
+							<a href="#" class="footer__legal-link">SLA Agreement</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="popup__overlay"></div>
+		<!-- <script src="https://cdn.tailwindcss.com"></script> -->
+		<script src="https://unpkg.com/imask"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+		<link
+			href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+			rel="stylesheet"
+		/>
+		<script>
+			const swiper = new Swiper('.myBanner', {
+				effect: 'fade', // Включаем эффект
+				fadeEffect: {
+					crossFade: true, // Слайды будут прозрачными при переходе
+				},
+				slidesPerView: 1,
+				spaceBetween: 30,
+				loop: true,
+				// autoplay: {
+				// 	delay: 3000,
+				// 	disableOnInteraction: false,
+				// },
+				navigation: {
+					nextEl: '.banner-button-next',
+					prevEl: '.banner-button-prev',
+				},
+				on: {
+					init() {
+						updatePowerIndicator(this)
+					},
+					slideChange() {
+						updatePowerIndicator(this)
+					},
+				},
+			})
+
+			function updatePowerIndicator(swiperInstance) {
+				const totalSlides = swiperInstance.slides.length
+				const activeIndex = swiperInstance.realIndex // правильный индекс
+
+				// ---- ПРОЦЕНТ ----
+				const percent = ((activeIndex + 1) / totalSlides) * 100
+
+				// округляем до 1 знака
+				const percentRounded = percent.toFixed(1)
+
+				// обновляем текст
+				document.querySelector('.power-indicator-stat').textContent = percentRounded + '%'
+
+				// ---- СЕГМЕНТЫ ----
+				const totalSegments = 20
+				const activeCount = Math.round((percent / 100) * totalSegments)
+
+				let html = ''
+
+				for (let i = 0; i < totalSegments; i++) {
+					html += `<div class="power-indicator__segment ${
+						i < activeCount
+							? 'power-indicator__segment--active'
+							: 'power-indicator__segment--inactive'
+					}"></div>`
+				}
+
+				document.getElementById('powerBar').innerHTML = html
+			}
+		</script>
+	</body>
+</html>

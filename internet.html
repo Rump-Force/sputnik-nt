@@ -1,0 +1,770 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Интернет</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/internet.css" />
+
+		<script src="js/main.js" defer></script>
+		<!-- defer атрибут что будет загружаться в конце -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header class="header">
+			<!-- <canvas
+				id="wavesCanvas"
+				style="
+					position: absolute;
+					top: -410px;
+					left: 296px;
+					width: 100%;
+					height: 100%;
+					pointer-events: none;
+					z-index: 0;
+				"
+			></canvas> -->
+			<div class="container">
+				<div class="header__inner">
+					<a href="index.html" class="logo logo-sputnik">
+						<div class="orbits">
+							<div class="orbit orbit-1"></div>
+							<div class="orbit orbit-2"></div>
+							<div class="orbit orbit-3"></div>
+						</div>
+
+						<div class="logo__title">
+							Sputnik
+							<span class="logo__accent">nt</span>
+						</div>
+						<div class="logo__subtitle">Телекоммуникации</div>
+					</a>
+
+					<button class="button button__burger">
+						<span class="burger__line"></span>
+						<span class="burger__line"></span>
+						<span class="burger__line"></span>
+					</button>
+
+					<nav class="menu">
+						<ul class="menu__items">
+							<button class="button__close button">
+								<i class="ri-close-large-fill"></i>
+							</button>
+
+							<li class="menu__item">
+								<a href="index.html" class="menu__link">Главная</a>
+							</li>
+							<li class="menu__item">
+								<a href="services.html" class="menu__link">Услуги</a>
+							</li>
+							<li class="menu__item">
+								<a href="tariffs.html" class="menu__link">Тарифы</a>
+							</li>
+							<li class="menu__item">
+								<a href="stock.html" class="menu__link">Акции</a>
+							</li>
+							<li class="menu__item">
+								<a href="news.html" class="menu__link">Новости</a>
+							</li>
+							<li class="menu__item">
+								<a href="company.html" class="menu__link">О нас</a>
+							</li>
+							<li class="menu__item">
+								<a href="contacts.html" class="menu__link">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+
+					<div class="header__button">
+						<button class="neon modal-win">Get Consultation</button>
+					</div>
+				</div>
+			</div>
+			<div class="overlay"></div>
+		</header>
+
+		<section class="network">
+			<div class="container">
+				<div class="network__inner">
+					<!-- CONTENT -->
+					<div class="network__content">
+						<!-- TAG -->
+						<div class="tag tag--network network__tag">
+							<span class="tag__icon" aria-hidden="true"><i class="ri-flashlight-line"></i></span>
+							<span class="tag__title">Next-Gen Fiber Network</span>
+						</div>
+
+						<h2 class="network__title">
+							Там, где твой ритм -
+							<span>там и скорость.</span>
+						</h2>
+
+						<p class="network__text">
+							Забудьте о зависаниях и долгих загрузках. Играйте, смотрите 4K-видео и работайте из
+							дома с интернетом, который просто летает.
+						</p>
+
+						<div class="network__stats network__stats--check">
+							150&nbsp;000+ happy neighbors connected
+						</div>
+					</div>
+
+					<!-- VISUAL -->
+					<div class="network__media">
+						<div class="network__images">
+							<img class="network__image" src="images/img/network.webp" alt="Оптоволоконная сеть" />
+						</div>
+
+						<div class="network-card">
+							<span class="network-card__icon" aria-hidden="true">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									class="lucide-wifi"
+									aria-hidden="true"
+								>
+									<path d="M12 20h.01"></path>
+									<path d="M2 8.82a15 15 0 0 1 20 0"></path>
+									<path d="M5 12.859a10 10 0 0 1 14 0"></path>
+									<path d="M8.5 16.429a5 5 0 0 1 7 0"></path>
+								</svg>
+							</span>
+							<div class="network-card__content">
+								<div class="network-card__subtitle">Connection Status</div>
+								<div class="network-card__title">Excellent • 980 Mbps</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="comfort">
+			<div class="container">
+				<div class="comfort__inner">
+					<div class="comfort__wrap">
+						<div class="comfort__title">Всё для вашего комфорта</div>
+						<div class="comfort__text">
+							Подключаясь к нам, вы выбираете технологии, которые работают на вас.
+						</div>
+					</div>
+					<div class="comfort__items">
+						<div class="comfort__item">
+							<div class="comfort__item-icon">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									class="lucide-cable"
+									aria-hidden="true"
+								>
+									<path
+										d="M17 19a1 1 0 0 1-1-1v-2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2a1 1 0 0 1-1 1z"
+									></path>
+									<path d="M17 21v-2"></path>
+									<path d="M19 14V6.5a1 1 0 0 0-7 0v11a1 1 0 0 1-7 0V10"></path>
+									<path d="M21 21v-2"></path>
+									<path d="M3 5V3"></path>
+									<path
+										d="M4 10a2 2 0 0 1-2-2V6a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2a2 2 0 0 1-2 2z"
+									></path>
+									<path d="M7 5V3"></path>
+								</svg>
+							</div>
+							<div class="comfort__item-title">Оптоволокно GPON</div>
+							<div class="comfort__item-text">
+								Вы получаете персональный канал прямо в квартиру. Никаких соседей на линии и падения
+								скорости в часы пик.
+							</div>
+						</div>
+
+						<div class="comfort__item">
+							<div class="comfort__item-icon">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									class="lucide-cable"
+									aria-hidden="true"
+								>
+									<rect width="20" height="8" x="2" y="14" rx="2"></rect>
+									<path d="M6.01 18H6"></path>
+									<path d="M10.01 18H10"></path>
+									<path d="M15 10v4"></path>
+									<path d="M17.84 7.17a4 4 0 0 0-5.66 0"></path>
+									<path d="M20.66 4.34a8 8 0 0 0-11.31 0"></path>
+								</svg>
+							</div>
+							<div class="comfort__item-title">Wi-Fi 6 Ready</div>
+							<div class="comfort__item-text">
+								Наслаждайтесь максимальным покрытием. Ваше оборудование будет готово к любым
+								нагрузкам и множеству устройств.
+							</div>
+						</div>
+
+						<div class="comfort__item">
+							<div class="comfort__item-icon">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									class="lucide-cable"
+									aria-hidden="true"
+								>
+									<path d="M12 6v6l4 2"></path>
+									<circle cx="12" cy="12" r="10"></circle>
+								</svg>
+							</div>
+							<div class="comfort__item-title">Поддержка 24/7</div>
+							<div class="comfort__item-text">
+								Получайте помощь в любое время суток. Оператор ответит вам в течение 2 минут и решит
+								вопрос удаленно.
+							</div>
+						</div>
+
+						<div class="comfort__item">
+							<div class="comfort__item-icon">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									class="lucide-cable"
+									aria-hidden="true"
+								>
+									<path
+										d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"
+									></path>
+								</svg>
+							</div>
+							<div class="comfort__item-title">Стабильный пинг</div>
+							<div class="comfort__item-text">
+								Играйте и общайтесь без задержек. Идеальный маршрут до серверов обеспечивает вам
+								преимущество.
+							</div>
+						</div>
+						<div class="comfort__item">
+							<div class="comfort__item-icon">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									class="lucide-cable"
+									aria-hidden="true"
+								>
+									<path
+										d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+									></path>
+									<path d="m9 12 2 2 4-4"></path>
+								</svg>
+							</div>
+							<div class="comfort__item-title">Ваша безопасность</div>
+							<div class="comfort__item-text">
+								Ваше соединение защищено от DDoS атак. Мы фильтруем вредоносный трафик, чтобы вы
+								были спокойны.
+							</div>
+						</div>
+						<div class="comfort__item">
+							<div class="comfort__item-icon">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									class="lucide-cable"
+									aria-hidden="true"
+								>
+									<circle cx="12" cy="12" r="10"></circle>
+									<path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+									<path d="M2 12h20"></path>
+								</svg>
+							</div>
+							<div class="comfort__item-title">Внешний IP</div>
+							<div class="comfort__item-text">
+								Используйте интернет на 100%. Бесплатный динамический IPv6 для ваших гаджетов и
+								умного дома.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="numbers">
+			<div class="container">
+				<div class="numbers__header">
+					<div class="numbers__title">Sputnik.Net в Цифрах</div>
+					<div class="numbers__text">Доверие, проверенное временем и тысячами клиентов.</div>
+				</div>
+				<div class="numbers__items">
+					<div class="numbers__item">
+						<div class="numbers__item-circle numbers--circle-line" data-percent="90">
+							<svg class="progress-ring" width="150" height="150">
+								<circle
+									class="progress-ring__background"
+									stroke="#F1F5F9"
+									stroke-width="8"
+									fill="transparent"
+									r="65"
+									cx="75"
+									cy="75"
+								/>
+								<circle
+									class="progress-ring__circle"
+									stroke="#3e82ee"
+									stroke-width="8"
+									fill="transparent"
+									r="65"
+									cx="75"
+									cy="75"
+								/>
+							</svg>
+							<div class="numbers__item-title">90%</div>
+						</div>
+						<div class="numbers__item-text">Надежность сети</div>
+					</div>
+					<div class="numbers__item">
+						<div class="numbers__item-circle numbers--circle-line" data-percent="75">
+							<svg class="progress-ring" width="150" height="150">
+								<circle
+									class="progress-ring__background"
+									stroke="#F1F5F9"
+									stroke-width="8"
+									fill="transparent"
+									r="65"
+									cx="75"
+									cy="75"
+								/>
+								<circle
+									class="progress-ring__circle"
+									stroke="#3e82ee"
+									stroke-width="8"
+									fill="transparent"
+									r="65"
+									cx="75"
+									cy="75"
+								/>
+							</svg>
+							<div class="numbers__item-title">20+</div>
+						</div>
+						<div class="numbers__item-text">Лет на рынке</div>
+					</div>
+					<div class="numbers__item">
+						<div class="numbers__item-circle numbers--circle-line" data-percent="50">
+							<svg class="progress-ring" width="150" height="150">
+								<circle
+									class="progress-ring__background"
+									stroke="#F1F5F9"
+									stroke-width="8"
+									fill="transparent"
+									r="65"
+									cx="75"
+									cy="75"
+								/>
+								<circle
+									class="progress-ring__circle"
+									stroke="#3e82ee"
+									stroke-width="8"
+									fill="transparent"
+									r="65"
+									cx="75"
+									cy="75"
+								/>
+							</svg>
+							<div class="numbers__item-title">150k+</div>
+						</div>
+						<div class="numbers__item-text">Надежность сети</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="equipment">
+			<div class="container">
+				<div class="equipment__layout">
+					<div class="equipment__content">
+						<div class="equipment__title">
+							Мощное оборудование
+							<span class="equipment__title--accent">Wi-Fi 6 нового поколения</span>
+						</div>
+						<div class="equipment__text">
+							Забудьте о «мертвых зонах» в квартире. Наш роутер обеспечивает покрытие до 150 м² и
+							поддерживает одновременное подключение до 50 устройств без потери скорости.
+						</div>
+						<div class="equipment__items">
+							<div class="equipment__item">
+								<div class="equipment__item-icon">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="equipment__item-icon-svg"
+										aria-hidden="true"
+									>
+										<path d="M12 20h.01"></path>
+										<path d="M2 8.82a15 15 0 0 1 20 0"></path>
+										<path d="M5 12.859a10 10 0 0 1 14 0"></path>
+										<path d="M8.5 16.429a5 5 0 0 1 7 0"></path>
+									</svg>
+								</div>
+								<div class="equipment__item-stats">
+									<div class="equipment__item-title">Wi-Fi 6 (802.11ax)</div>
+									<div class="equipment__item-text">До 40% быстрее предыдущего стандарта</div>
+								</div>
+							</div>
+							<div class="equipment__item">
+								<div class="equipment__item-icon">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="equipment__item-icon-svg"
+										aria-hidden="true"
+									>
+										<path d="M12 20v2"></path>
+										<path d="M12 2v2"></path>
+										<path d="M17 20v2"></path>
+										<path d="M17 2v2"></path>
+										<path d="M2 12h2"></path>
+										<path d="M2 17h2"></path>
+										<path d="M2 7h2"></path>
+										<path d="M20 12h2"></path>
+										<path d="M20 17h2"></path>
+										<path d="M20 7h2"></path>
+										<path d="M7 20v2"></path>
+										<path d="M7 2v2"></path>
+										<rect x="4" y="4" width="16" height="16" rx="2"></rect>
+										<rect x="8" y="8" width="8" height="8" rx="1"></rect>
+									</svg>
+								</div>
+								<div class="equipment__item-stats">
+									<div class="equipment__item-title">4-ядерный процессор</div>
+									<div class="equipment__item-text">Стабильная работа под высокой нагрузкой</div>
+								</div>
+							</div>
+							<div class="equipment__item">
+								<div class="equipment__item-icon">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="equipment__item-icon-svg"
+										aria-hidden="true"
+									>
+										<path
+											d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+										></path>
+									</svg>
+								</div>
+								<div class="equipment__item-stats">
+									<div class="equipment__item-title">WPA3 Защита</div>
+									<div class="equipment__item-text">Максимальная безопасность ваших данных</div>
+								</div>
+							</div>
+							<div class="equipment__item">
+								<div class="equipment__item-icon">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="equipment__item-icon-svg"
+										aria-hidden="true"
+									>
+										<rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect>
+										<path d="M12 18h.01"></path>
+									</svg>
+								</div>
+								<div class="equipment__item-stats">
+									<div class="equipment__item-title">Управление со смартфона</div>
+									<div class="equipment__item-text">Удобное приложение для настройки</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="equipment__media">
+						<div class="equipment__media-images">
+							<img src="images/img/equipment-wifi.webp" alt="" class="equipment__media-image" />
+						</div>
+						<div class="equipment__status">
+							<div class="equipment__status-circle"></div>
+							<div class="equipment__status-text">Online Status</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="modal" id="thanks-modal">
+			<div class="modal__overlay"></div>
+			<div class="modal__content">
+				<button class="modal__close" id="modal-close">
+					<i class="ri-close-line"></i>
+				</button>
+
+				<div class="modal__icon">
+					<svg class="checkmark" viewBox="0 0 52 52">
+						<circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+						<path class="checkmark__check" fill="none" d="M14 27l7 7 17-17" />
+					</svg>
+				</div>
+
+				<h3 class="modal__title">Спасибо за заявку!</h3>
+				<p class="modal__text">Мы свяжемся с вами в ближайшее время.</p>
+			</div>
+		</div>
+
+		<div class="popup">
+			<!-- фоновые декорации попапа -->
+			<div class="popup__decor popup__decor--bg-left"></div>
+			<div class="popup__decor popup__decor--bg-right"></div>
+
+			<div class="popup__inner">
+				<div class="popup__header">
+					<div class="popup__heading">
+						<div class="popup__tag">
+							<span class="popup__tag-icon"></span>
+							<span class="popup__tag-text">System online</span>
+						</div>
+					</div>
+					<h3 class="popup__title">
+						Обратный
+						<span>звонок</span>
+					</h3>
+
+					<button class="popup__close button">
+						<i class="ri-close-line popup__close-icon"></i>
+					</button>
+				</div>
+				<p class="popup__text popup__text--line">
+					Введите свои данные, и мы свяжемся с вами в ближайшее время для настройки оборудования.
+				</p>
+				<form class="popup__form">
+					<div class="popup__field">
+						<label class="popup__label" for="name">Имя пользователя</label>
+						<div class="popup__field-group">
+							<input
+								class="popup__input"
+								id="name"
+								type="text"
+								placeholder="Alexey"
+								autocomplete="username"
+								required
+							/>
+
+							<!-- декор поля -->
+							<span class="popup__decor--field-top-left"></span>
+							<span class="popup__decor--field-bottom-right"></span>
+						</div>
+					</div>
+
+					<div class="popup__field">
+						<label class="popup__label" for="tel">Телефон</label>
+						<div class="popup__field-group">
+							<input
+								class="popup__input"
+								id="tel"
+								type="tel"
+								placeholder="+7 (___) ___-__-__"
+								autocomplete="tel"
+								required
+							/>
+
+							<span class="popup__decor--field-top-left"></span>
+							<span class="popup__decor--field-bottom-right"></span>
+						</div>
+					</div>
+
+					<button class="popup__button button" type="submit">Заказать звонок</button>
+				</form>
+				<div class="popup__decor-line"></div>
+				<div class="popup__info">
+					<div class="popup__info-item">
+						<span class="popup__info-icon"><i class="ri-lock-line"></i></span>
+						<span class="popup__info-text">Secure Encrypted</span>
+					</div>
+					<div class="popup__info-id">ID: 8842-XF</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="container">
+				<!-- TOP -->
+				<div class="footer__top">
+					<div class="footer__grid">
+						<!-- BRAND -->
+						<div class="footer__brand">
+							<a href="#" class="footer__logo">
+								<div class="footer__logo-icon"></div>
+
+								<div class="footer__logo-content">
+									<div class="footer__logo-title">
+										Sputnik
+										<span>NT</span>
+									</div>
+									<div class="footer__logo-subtitle">Всегда онлайн</div>
+								</div>
+							</a>
+
+							<div class="footer__description">
+								Провайдер нового поколения. Создаем цифровую экосистему для жизни и бизнеса на базе
+								собственной оптоволоконной магистрали.
+							</div>
+
+							<div class="footer__region">
+								<div class="footer__region-badge">
+									<div class="footer__region-icon"><i class="ri-global-line"></i></div>
+									<div class="footer__region-code">RU</div>
+								</div>
+								<div class="footer__region-name">Donetsk Region</div>
+							</div>
+						</div>
+
+						<!-- NAV -->
+						<div class="footer__nav">
+							<div class="footer__title footer__title--line">
+								<span class="footer__title-text">Сервисы</span>
+								<span class="footer__title-icon"><i class="ri-arrow-down-s-line"></i></span>
+							</div>
+							<nav class="footer__menu">
+								<a href="#" class="footer__link">Скоростной интернет</a>
+								<a href="#" class="footer__link">Цифровое ТВ</a>
+								<a href="#" class="footer__link">Видеонаблюдение</a>
+								<a href="#" class="footer__link">Умный дом</a>
+								<a href="#" class="footer__link">Оборудование</a>
+							</nav>
+						</div>
+
+						<!-- NAV -->
+						<div class="footer__nav">
+							<div class="footer__title footer__title--line">
+								<span class="footer__title-text">Компания</span>
+								<span class="footer__title-icon"><i class="ri-arrow-down-s-line"></i></span>
+							</div>
+							<nav class="footer__menu">
+								<a href="#" class="footer__link">О нас</a>
+								<a href="#" class="footer__link">Лицензия</a>
+								<a href="#" class="footer__link">Инвесторам</a>
+								<a href="#" class="footer__link">Новости</a>
+								<a href="#" class="footer__link">Контакты</a>
+							</nav>
+						</div>
+
+						<!-- CONTACTS -->
+						<div class="footer__contacts">
+							<div class="footer__phone">
+								<a href="tel:+88000000000" class="footer__phone-link">8 800 000-00-00</a>
+								<span class="footer__phone-text">Круглосуточная поддержка</span>
+							</div>
+
+							<button class="footer__button button modal-win">
+								<span class="footer__button-icon"><i class="ri-mail-send-line"></i></span>
+								<span class="footer__button-text">Написать письмо</span>
+								<span class="footer__button-icon icon--arrow">
+									<i class="ri-arrow-right-up-line"></i>
+								</span>
+							</button>
+
+							<div class="footer__schedule">
+								<span class="footer__schedule-icon"><i class="ri-time-line"></i></span>
+								<span class="footer__schedule-text">Офис: Пн–Пт 09:00 – 21:00</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- BOTTOM -->
+				<div class="footer__bottom">
+					<div class="footer__bottom-inner">
+						<div class="footer__copyright">© 2026 Telecom Future. All rights reserved.</div>
+
+						<div class="footer__legal">
+							<a href="#" class="footer__legal-link">Privacy Policy</a>
+							<a href="#" class="footer__legal-link">Terms of Service</a>
+							<a href="#" class="footer__legal-link">SLA Agreement</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="popup__overlay"></div>
+		<!-- <script src="https://cdn.tailwindcss.com"></script> -->
+		<script src="js/internet.js"></script>
+		<script src="https://unpkg.com/imask"></script>
+		<link
+			href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+			rel="stylesheet"
+		/>
+	</body>
+</html>

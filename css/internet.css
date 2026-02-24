@@ -1,0 +1,629 @@
+.network {
+	padding-block: 300px 100px;
+	background: #F8FAFC;
+	overflow: hidden;
+}
+
+.network__inner {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	justify-content: space-between;
+}
+
+.network__content {
+	max-width: 600px;
+	width: 100%;
+
+}
+
+.tag--network {
+	color: #4F64EC;
+	background: #EEF2FF;
+	border: 1px solid #E0E7FF;
+	display: inline-block;
+	padding: 3px 13px;
+	border-radius: 20px;
+	margin-bottom: 35px;
+}
+
+.network__tag {}
+
+.tag__icon i {
+	color: inherit;
+	line-height: 1;
+}
+
+.tag__title {
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: 11px;
+	letter-spacing: 0.05rem;
+}
+
+.network__title {
+	font-size: 57px;
+	font-weight: 800;
+	margin-bottom: 10px;
+	line-height: 1;
+}
+
+.network__text {
+	color: #738197;
+	font-size: 16px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+.network__stats {}
+
+.network__stats--check {
+	position: relative;
+	padding-left: 15px;
+	color: #94A3B8;
+	font-size: 12px;
+
+}
+
+.network__stats--check::before {
+	content: '✔';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	font-size: 12px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	color: #1aae00ed;
+}
+
+
+.network__media {
+	position: relative;
+	/* max-width: 600px;
+	width: 100%; */
+	height: auto;
+}
+
+
+.network__images {
+	position: relative;
+	width: 600px;
+	padding: 5px;
+	border-radius: 20px;
+	/* overflow: hidden; */
+	background: rgb(255, 255, 255);
+	z-index: 2;
+}
+
+.network__images::after {
+	content: '';
+	position: absolute;
+	right: -30px;
+	bottom: -30px;
+	width: 110px;
+	height: 110px;
+	/* background: red; */
+	background-image: radial-gradient(circle, #E2E8EF 2px, transparent 2px);
+	background-size: 16px 16px;
+	opacity: 0.5;
+	z-index: -1;
+}
+
+
+.network__image {
+	border-radius: 14px;
+	width: 100%;
+	height: auto;
+	display: block;
+	object-fit: cover;
+	object-position: center;
+}
+
+.network-card {
+	position: absolute;
+	left: 30px;
+	bottom: 30px;
+	display: inline-flex;
+	align-items: center;
+	gap: 15px;
+	padding: 20px;
+	background: #fff;
+	border-radius: 20px;
+	z-index: 5;
+}
+
+.network-card__icon {
+	background: #D1FAE5;
+	width: 45px;
+	height: auto;
+	aspect-ratio: 1;
+	border-radius: 50px;
+	display: grid;
+	place-items: center;
+}
+
+.lucide-wifi {
+	color: #059669;
+}
+
+.network-card__content {}
+
+.network-card__subtitle {
+	text-transform: uppercase;
+	color: #94A3B8;
+	font-weight: 700;
+	font-size: 11px;
+	margin-bottom: 5px;
+
+}
+
+.network-card__title {
+	font-weight: 800;
+	font-size: 14px;
+}
+
+@media screen and (max-width: 1240px) {
+	.network {
+		padding-bottom: calc(50px + (100 - 50) * ((100vw - 1000px) / (1200 - 1000)));
+	}
+
+	.network__title {
+		font-size: calc(35px + (57 - 35) * ((100vw - 1000px) / (1240 - 1000)));
+	}
+
+	.network__images {
+		width: calc(500px + (600 - 500) * ((100vw - 1000px) / (1240 - 1000)));
+	}
+
+	.network-card__icon {
+		width: calc(35px + (45 - 35) * ((100vw - 1000px) / (1240 - 1000)));
+		/* height: auto; */
+	}
+
+	.network-card {
+		border-radius: calc(10px + (20 - 10) * ((100vw - 1000px) / (1240 - 1000)));
+		padding: calc(10px + (20 - 10) * ((100vw - 1000px) / (1240 - 1000)));
+	}
+
+
+}
+
+@media screen and (max-width: 1000px) {
+	.network {
+		padding-block: 50px;
+	}
+
+	.network__title {
+		font-size: 35px;
+	}
+
+	.network-card__icon {
+		width: 35px
+			/* height: auto; */
+	}
+
+	.network-card {
+		border-radius: 10px;
+		padding: 10px
+	}
+
+	.network__images {
+		width: 500px
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.network__inner {
+		flex-direction: column;
+		align-items: start;
+	}
+
+	.network__content {
+		max-width: 100%;
+	}
+
+	.network__images {
+		width: 100%;
+	}
+
+	.network__images::after {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.network__title {
+		font-size: calc(30px + (35 - 30) * ((100vw - 400px) / (600 - 400)));
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.network-card {
+		position: unset;
+		/* position: relative;
+		top: 0;
+		left: 0; */
+		margin-top: 20px;
+		width: 100%;
+	}
+}
+
+
+
+
+/* Секция Все для вашего комфорта */
+.comfort {
+	background: #F8FAFC;
+	padding-block: 100px;
+}
+
+
+
+.comfort__inner {}
+
+.comfort__wrap {
+
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.comfort__title {
+	font-size: 28px;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+
+.comfort__text {
+	color: #94A0AC;
+	font-weight: 500;
+	font-size: 18px;
+
+}
+
+.comfort__items {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+	gap: 20px;
+}
+
+.comfort__item {
+	background: #fff;
+	padding: 20px;
+	/* max-width: 300px; */
+	border-radius: 25px;
+	box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+	;
+}
+
+.comfort__item-icon {
+	background: linear-gradient(to bottom left, #5470EF, #1E99EB);
+	display: inline-flex;
+	align-items: center;
+	justify-self: center;
+	padding: 10px;
+	border-radius: 10px;
+	margin-bottom: 15px;
+}
+
+.lucide-cable {
+	color: #fff;
+}
+
+.comfort__item-title {
+	font-size: 17px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.comfort__item-text {
+	font-size: 13px;
+	color: #96A2AD;
+	line-height: 1.5;
+}
+
+@media screen and (max-width: 1200px) {
+	.comfort {
+		padding-block: calc(50px + (100 - 50) * ((100vw - 1000px) / (1200 - 1000)));
+		;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.comfort {
+		padding-block: 50px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.comfort__items {
+		grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+	}
+}
+
+/* Секция Все для вашего комфорта */
+
+
+/* Секция в цифрах и все о нем */
+.numbers {
+	background: #fff;
+	padding-block: 75px;
+}
+
+.container {}
+
+.numbers__header {
+	text-align: center;
+	margin-bottom: 35px;
+}
+
+.numbers__title {
+	font-size: 26px;
+	font-weight: 700;
+	letter-spacing: 0.05rem;
+	margin-bottom: 8px;
+}
+
+.numbers__text {
+	font-size: 18px;
+	color: #96A2C3;
+}
+
+.numbers__items {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	row-gap: 50px;
+}
+
+.numbers__item {
+	flex-basis: auto;
+	flex-shrink: 1;
+	flex-grow: 1;
+	/* text-align: center; */
+	display: grid;
+	place-items: center;
+	max-width: 250px;
+	width: 100%;
+}
+
+.numbers__item-circle {
+	display: grid;
+	place-items: center;
+	margin-bottom: 20px;
+}
+
+.numbers--circle-line {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	border: none;
+}
+
+.progress-ring {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: rotate(-90deg);
+}
+
+.progress-ring__circle {
+	transition: stroke-dashoffset 2s ease-in-out;
+	stroke-linecap: round;
+}
+
+.progress-ring__circle {
+	transition: stroke-dashoffset 2s ease-out;
+	stroke-linecap: round;
+}
+
+.numbers--circle-line {
+	border: none !important;
+}
+
+.numbers__item-title {
+	position: relative;
+	z-index: 2;
+}
+
+.numbers__item-title {
+	font-size: 25px;
+	font-weight: 700;
+}
+
+.numbers__item-text {
+	color: #64748B;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	font-weight: 600;
+}
+
+/* Секция в цифрах и все о нем */
+
+
+/* Секция мощное оборудование WI-FI */
+.equipment {
+	background: #F8FAFC;
+	padding-block: 100px;
+}
+
+.container {}
+
+.equipment__layout {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	gap: 25px;
+}
+
+.equipment__content {
+	max-width: 700px;
+	width: 100%;
+}
+
+.equipment__title {
+	font-size: 32px;
+	font-weight: 700;
+	max-width: 420px;
+	width: 100%;
+	margin-bottom: 30px;
+
+}
+
+.equipment__title--accent {
+	background: linear-gradient(to bottom right, #002fff, #0099ff8e 80%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.equipment__text {
+	font-size: 18px;
+	color: #475569;
+	margin-bottom: 40px;
+}
+
+.equipment__items {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 30px;
+}
+
+.equipment__item {
+	display: flex;
+	align-items: center;
+	gap: 25px;
+}
+
+.equipment__item-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 45px;
+	height: 45px;
+	aspect-ratio: 1;
+	border-radius: 10px;
+	background: #D1FAE5;
+}
+
+.equipment__item-icon-svg {
+	color: #059669;
+}
+
+.equipment__item-stats {}
+
+.equipment__item-title {
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.equipment__item-text {
+	color: #64748b;
+	font-size: 14px;
+	max-width: 200px;
+}
+
+.equipment__media {
+	position: relative;
+}
+
+.equipment__media-images {
+	padding: 8px;
+	border-radius: 25px;
+	box-shadow: 0 0 10px hsl(0deg 0% 0% / 25%);
+}
+
+.equipment__media-image {
+	/* width: 100%; */
+	max-width: 600px;
+	height: auto;
+	border-radius: 20px;
+	display: block;
+}
+
+.equipment__status {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	display: inline-flex;
+	align-items: center;
+	background: #fff;
+	border: 1px solid hsla(0, 0%, 49%, 0.25);
+	box-shadow: 0 0 10px hsl(0deg 0% 0% / 25%);
+	padding-inline: 15px;
+	border-radius: 20px;
+	gap: 10px;
+}
+
+.equipment__status-circle {
+	width: 8px;
+	height: 8px;
+	background: #059669;
+	border-radius: 100%;
+	animation: pulse-online 1.5s ease-out infinite;
+
+}
+
+@keyframes pulse-online {
+	from {
+		transform: scale(1);
+		opacity: 0.7;
+	}
+
+	to {
+		transform: scale(2);
+		opacity: 0;
+	}
+}
+
+.equipment__status-text {}
+
+
+@media screen and (max-width: 1200px) {
+	.equipment__media-image {
+		max-width: calc(450px + (600 - 450) * ((100vw - 1000px) / (1200 - 1000)));
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.equipment__layout {
+		flex-direction: column-reverse;
+	}
+
+	.equipment__media {
+		display: none;
+	}
+
+	.equipment__media-image {
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.equipment__items {
+		grid-template-columns: repeat(1, 1fr);
+		justify-items: center;
+	}
+
+	.equipment__title {
+		font-size: calc(25px + (32 - 25) * ((100vw - 300px) / (550 - 300)));
+	}
+
+	.equipment__text {
+		font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (550 - 300)));
+	}
+}
+
+@media screen and (max-width: 300px) {
+	.equipment__title {
+		font-size: 25px;
+
+	}
+
+	.equipment__text {
+		font-size: 14px;
+	}
+}
+
+/* Секция мощное оборудование WI-FI */
