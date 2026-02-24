@@ -1560,6 +1560,7 @@ li {
 	background: #9ca3af18;
 	backdrop-filter: blur(5px);
 	transition: border-color 0.4s ease, background 0.4s ease;
+	z-index: 10;
 }
 
 .popup__close-icon {
