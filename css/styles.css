@@ -567,6 +567,18 @@ li {
 		font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (700 - 300)));
 		padding-inline: calc(25px + (40 - 25) * ((100vw - 300px) / (700 - 300)));
 	}
+
+	.header__inner {
+		height: 70px;
+	}
+
+	.logo-sputnik::before {
+		display: none;
+	}
+
+	.orbits {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 500px) {

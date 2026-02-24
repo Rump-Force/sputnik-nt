@@ -191,7 +191,7 @@
 
 @media screen and (max-width: 1000px) {
 	.network {
-		padding-block: 50px;
+		padding-block: 300px 50px;
 	}
 
 	.network__title {
