@@ -478,6 +478,14 @@ if (popup) {
 	const submitHandler = async function (e) {
 		e.preventDefault()
 
+		// Проверяем валидность номера телефона
+		const phoneInput = tariffPopup.querySelector('#phone-tariff')
+		if (phoneInput && phoneInput.value.trim() === '') {
+			alert('Пожалуйста, укажите номер телефона')
+			phoneInput.focus()
+			return
+		}
+
 		// Собираем данные
 		const name = tariffPopup.querySelector('.tariff__selected-name')?.textContent?.trim() || ''
 		const speed = tariffPopup.querySelector('.tariff__speed-value')?.textContent?.trim() || ''
@@ -503,10 +511,17 @@ if (popup) {
 				submitBtn.textContent = 'Отправка...'
 			}
 
+			// Создаем AbortController для timeout (10 секунд)
+			const controller = new AbortController()
+			const timeoutId = setTimeout(() => controller.abort(), 10000)
+
 			const resp = await fetch('https://jsonplaceholder.typicode.com/posts', {
 				method: 'POST',
 				body: formData,
+				signal: controller.signal,
 			})
+
+			clearTimeout(timeoutId)
 
 			if (resp.ok) {
 				// 1. Закрываем текущий попап
@@ -554,8 +569,13 @@ if (popup) {
 				alert('Ошибка при отправке. Попробуйте ещё раз.')
 			}
 		} catch (err) {
-			console.error('❌ Ошибка сети:', err)
-			alert('Проблема с подключением. Проверьте интернет и попробуйте ещё раз.')
+			if (err.name === 'AbortError') {
+				console.error('❌ Timeout - сервер не ответил')
+				alert('Время ожидания истекло. Проверьте интернет и попробуйте ещё раз.')
+			} else {
+				console.error('❌ Ошибка сети:', err)
+				alert('Проблема с подключением. Проверьте интернет и попробуйте ещё раз.')
+			}
 		} finally {
 			if (submitBtn) {
 				submitBtn.disabled = false
