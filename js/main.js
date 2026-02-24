@@ -1,17 +1,3 @@
-// var swiper = new Swiper('.myBanner', {
-// 	slidesPerView: 1,
-// 	spaceBetween: 30,
-// 	loop: true,
-// 	pagination: {
-// 		el: '.swiper-pagination',
-// 		clickable: true,
-// 	},
-// 	navigation: {
-// 		nextEl: '.swiper-button-next',
-// 		prevEl: '.swiper-button-prev',
-// 	},
-// })
-
 let lastScroll = 0
 const headerElement = document.querySelector('.header')
 
@@ -317,7 +303,11 @@ if (popupForm && popupPhone) {
 		}
 	})
 }
-
+// Маска для поля телефона в форме тарифа
+const phoneTariff = document.getElementById('phone-tariff')
+if (phoneTariff) {
+	const tariffMask = IMask(phoneTariff, { mask: '+{7} (000) 000-00-00' })
+}
 let scrollLocks = 0
 
 function lockScroll() {
@@ -501,7 +491,18 @@ if (popup) {
 			formData.append('price', price)
 		}
 
+		// Визуальная обратная связь на кнопке (если её можно найти)
+		const submitBtn = tariffPopup.querySelector(
+			'.selected__form-button, .tariff__form-button, button[type="submit"]',
+		)
+		const btnOriginalText = submitBtn?.textContent || ''
+
 		try {
+			if (submitBtn) {
+				submitBtn.disabled = true
+				submitBtn.textContent = 'Отправка...'
+			}
+
 			const resp = await fetch('https://jsonplaceholder.typicode.com/posts', {
 				method: 'POST',
 				body: formData,
@@ -511,6 +512,7 @@ if (popup) {
 				// 1. Закрываем текущий попап
 				tariffPopup.classList.remove('is-active-tariff')
 				if (overlayTariff) overlayTariff.classList.remove('tariff-overlay--active')
+				unlockScroll()
 
 				// 2. Работаем с модалкой "Спасибо"
 				const thanksModal = document.querySelector('#thanks-modal')
@@ -543,12 +545,22 @@ if (popup) {
 
 					thanksModal.classList.add('_active')
 					document.body.style.overflow = 'hidden'
+					lockScroll()
 				}
 
 				if (innerForm) innerForm.reset()
+			} else {
+				console.error('❌ Ошибка сервера:', resp.status)
+				alert('Ошибка при отправке. Попробуйте ещё раз.')
 			}
 		} catch (err) {
-			console.error(err)
+			console.error('❌ Ошибка сети:', err)
+			alert('Проблема с подключением. Проверьте интернет и попробуйте ещё раз.')
+		} finally {
+			if (submitBtn) {
+				submitBtn.disabled = false
+				submitBtn.textContent = btnOriginalText
+			}
 		}
 	}
 
@@ -556,8 +568,19 @@ if (popup) {
 	if (innerForm) {
 		innerForm.addEventListener('submit', submitHandler)
 	} else {
-		const btn = tariffPopup.querySelector('.selected__form-button, .tariff__form-button')
-		if (btn) btn.addEventListener('click', submitHandler)
+		// Ищем кнопку по нескольким селекторам (для мобильных)
+		const btn = tariffPopup.querySelector(
+			'.selected__form-button, .tariff__form-button, .tariff__form-button-text, button[type="submit"]',
+		)
+		if (btn) {
+			btn.addEventListener('click', function (e) {
+				e.preventDefault()
+				e.stopPropagation()
+				submitHandler.call(this, e)
+			})
+		} else {
+			console.warn('⚠️ Кнопка отправки формы тарифа не найдена')
+		}
 	}
 })()
 
